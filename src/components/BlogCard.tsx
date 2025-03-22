@@ -18,7 +18,7 @@ export default function BlogCard({ title, image, content }: BlogCardProps) {
         <p className="text-gray-800 mb-4 sm:mb-6">{content}</p>
         <div>
           <button className="bg-[#2196f3] hover:bg-blue-600 cursor-pointer text-white py-2 px-6 rounded-md transition duration-300">
-            Buy now
+            <a href="https://www.amazon.in/">Buy now</a>
           </button>
         </div>
       </div>
