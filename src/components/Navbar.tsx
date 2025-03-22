@@ -36,7 +36,9 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full h-[75px] flex justify-between items-center bg-[#2196f3] text-white z-50">
-      <h2 className="text-[2em] font-semibold ml-4 md:ml-8">BlogSpot</h2>
+      <Link href="/">
+        <h2 className="text-[2em] font-semibold ml-4 md:ml-8">BlogSpot</h2>
+      </Link>
 
       {/* Burger Menu Button - only visible on small screens */}
       <div className="lg:hidden mr-4 z-50">
