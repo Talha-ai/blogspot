@@ -187,10 +187,12 @@ export default function AboutPage() {
 
           <div className="mt-8">
             <a
-              href="/contact"
+              href="http://chat.whatsapp.com/LewbrSC0D2hGNnV7aUmO74"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#2196f3] text-white py-3 px-6 rounded-md hover:bg-[#1976d2] transition-colors duration-300"
             >
-              Contact Us
+              Join WhatsApp Group
             </a>
           </div>
         </div>
