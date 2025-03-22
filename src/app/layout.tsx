@@ -23,6 +23,9 @@ const leckerliOne = Leckerli_One({
 export const metadata: Metadata = {
   title: 'BlogSpot - Your Source for Insightful Content',
   description: 'Discover articles, stories and tips on a variety of topics.',
+  icons: {
+    icon: '/favicon-3.png',
+  },
 };
 
 import { ReactNode } from 'react';
