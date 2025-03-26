@@ -11,7 +11,6 @@ export default function Home() {
       <BlogList />
       <TrendingSection />
 
-      {/* Optional: Featured section or newsletter section */}
       <section className="py-16 bg-[#2196f3] text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Join Our Community</h2>
