@@ -49,45 +49,49 @@ class AuthController {
         });
       }
 
-      // Regenerate session to prevent session fixation
-      return new Promise((resolve, reject) => {
-        req.session.regenerate((err) => {
-          if (err) {
-            console.error('Session regeneration error:', err);
+      // Regenerate session with a callback
+      req.session.regenerate((err) => {
+        if (err) {
+          console.error('Session regeneration error:', err);
+          return res.status(500).json({
+            error: 'Session creation failed',
+            message: err.message
+          });
+        }
+
+        // Set user in session
+        req.session.user = {
+          id: user.id,
+          name: user.name,
+          email: user.email
+        };
+
+        // Save session with a callback
+        req.session.save((saveErr) => {
+          if (saveErr) {
+            console.error('Session save error:', saveErr);
             return res.status(500).json({
-              error: 'Session creation failed',
-              message: err.message
+              error: 'Session save failed',
+              message: saveErr.message
             });
           }
 
-          // Set user information in session
-          req.session.user = {
-            id: user.id,
-            name: user.name,
-            email: user.email
-          };
+          // Optional: Log session details after saving
+          console.log('Session after login:', {
+            sessionID: req.sessionID,
+            user: req.session.user
+          });
 
-          // Save the session
-          req.session.save((saveErr) => {
-            if (saveErr) {
-              console.error('Session save error:', saveErr);
-              return res.status(500).json({
-                error: 'Session save failed',
-                message: saveErr.message
-              });
-            }
-
-            // Send successful response
-            res.json({
-              message: 'Login successful',
-              user: {
-                id: user.id,
-                name: user.name,
-                email: user.email
-              },
-              isAuthenticated: true
-            });
-            resolve();
+          // Respond with success
+          res.json({
+            message: 'Login successful',
+            user: {
+              id: user.id,
+              name: user.name,
+              email: user.email
+            },
+            isAuthenticated: true,
+            sessionID: req.sessionID
           });
         });
       });
@@ -96,6 +100,27 @@ class AuthController {
       res.status(500).json({
         error: 'Login failed',
         message: error.message
+      });
+    }
+  }
+
+  // Get Current User
+  static getCurrentUser(req, res) {
+    console.log('Get Current User - Session:', {
+      sessionID: req.sessionID,
+      sessionUser: req.session?.user
+    });
+
+    if (req.session.user) {
+      res.json({
+        user: req.session.user,
+        isAuthenticated: true,
+        sessionID: req.sessionID
+      });
+    } else {
+      res.status(401).json({
+        error: 'Not authenticated',
+        isAuthenticated: false
       });
     }
   }
@@ -114,20 +139,20 @@ class AuthController {
     });
   }
 
-  // Get Current User
-  static getCurrentUser(req, res) {
-    if (req.session.user) {
-      res.json({
-        user: req.session.user,
-        isAuthenticated: true
-      });
-    } else {
-      res.status(401).json({
-        error: 'Not authenticated',
-        isAuthenticated: false
-      });
-    }
-  }
+  // // Get Current User
+  // static getCurrentUser(req, res) {
+  //   if (req.session.user) {
+  //     res.json({
+  //       user: req.session.user,
+  //       isAuthenticated: true
+  //     });
+  //   } else {
+  //     res.status(401).json({
+  //       error: 'Not authenticated',
+  //       isAuthenticated: false
+  //     });
+  //   }
+  // }
 }
 
 module.exports = AuthController;
