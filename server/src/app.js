@@ -25,7 +25,13 @@ class App {
     // CORS
     this.app.use(cors({
       origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-      credentials: true
+      credentials: true,
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      allowedHeaders: [
+        'Content-Type',
+        'Authorization',
+        'Access-Control-Allow-Credentials'
+      ]
     }));
 
     // Body Parsing
@@ -36,15 +42,17 @@ class App {
     this.app.use(session({
       store: new PostgreSQLStore({
         pool: database.pool,
-        tableName: 'user_sessions'
+        tableName: 'user_sessions',
+        createTableIfMissing: true
       }),
       secret: environmentConfig.AUTH.SESSION_SECRET,
       resave: false,
       saveUninitialized: false,
       cookie: {
-        secure: environmentConfig.SERVER.ENV === 'production',
+        maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
+        secure: process.env.NODE_ENV === 'production', // Use secure in production
         httpOnly: true,
-        maxAge: 1000 * 60 * 60 * 24 // 1 day
+        sameSite: 'lax' // Important for cross-origin sessions
       }
     }));
   }
