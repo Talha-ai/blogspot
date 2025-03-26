@@ -89,6 +89,7 @@ class AuthController {
   // Get Current User
   static getCurrentUser(req, res) {
     if (req.session.user) {
+      console.log(req.session)
       res.json({ user: req.session.user, isAuthenticated: true });
     } else {
       res.status(401).json({ error: 'Not authenticated' });

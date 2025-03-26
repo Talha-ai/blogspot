@@ -52,9 +52,7 @@ class App {
         maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
         secure: process.env.NODE_ENV === 'production', // Only use secure in production
         httpOnly: true,
-        sameSite: 'lax',
-        // REMOVE domain setting, let browser handle it
-        // domain: "blogspot-alpha.vercel.app" // This can cause cross-origin issues
+        sameSite: 'none',
       }
     }));
     this.app.use((req, res, next) => {
