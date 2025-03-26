@@ -3,16 +3,6 @@ const UserModel = require('../models/user.model');
 const environmentConfig = require('../config/environment');
 
 class AuthController {
-
-  static async authenticate(req, res) {
-    // Check if user is authenticated
-    if (req.session.userId) {
-      res.json({ isAuthenticated: true });
-    } else {
-      res.json({ isAuthenticated: false });
-    }
-  };
-
   // User Signup
   static async signup(req, res) {
     try {

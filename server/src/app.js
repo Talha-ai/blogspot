@@ -50,12 +50,19 @@ class App {
       saveUninitialized: false,
       cookie: {
         maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
-        secure: true, // Use secure in production
+        secure: process.env.NODE_ENV === 'production', // Only use secure in production
         httpOnly: true,
-        sameSite: 'lax', // Important for cross-origin sessions
-        domain: "blogspot-alpha.vercel.app"
+        sameSite: 'lax',
+        // REMOVE domain setting, let browser handle it
+        // domain: "blogspot-alpha.vercel.app" // This can cause cross-origin issues
       }
     }));
+    this.app.use((req, res, next) => {
+      console.log('Session:', req.session);
+      console.log('Session User:', req.session.user);
+      console.log('Cookies:', req.headers.cookie);
+      next();
+    });
   }
 
   initializeRoutes() {
