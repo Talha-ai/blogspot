@@ -46,7 +46,7 @@ export default function AuthModal() {
 
     try {
       const response = await axios.post(
-        'http://localhost:4000/api/auth/login',
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/login`,
         {
           email: loginData.email,
           password: loginData.password,
@@ -78,7 +78,7 @@ export default function AuthModal() {
 
     try {
       const response = await axios.post(
-        'http://localhost:4000/api/auth/signup',
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/signup`,
         {
           name: signupData.name,
           email: signupData.email,

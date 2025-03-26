@@ -17,7 +17,7 @@ export default function Navbar() {
     const checkAuthStatus = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:4000/api/auth/getUser',
+          `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/getUser`,
           {
             withCredentials: true,
           }
@@ -47,7 +47,7 @@ export default function Navbar() {
   const handleLogout = async () => {
     try {
       await axios.post(
-        'http://localhost:4000/api/auth/logout',
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/logout`,
         {},
         {
           withCredentials: true,
