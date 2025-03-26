@@ -24,7 +24,7 @@ class App {
 
     // CORS
     this.app.use(cors({
-      origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+      origin: process.env.FRONTEND_URL,
       credentials: true,
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       allowedHeaders: [
@@ -50,9 +50,10 @@ class App {
       saveUninitialized: false,
       cookie: {
         maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
-        secure: process.env.NODE_ENV === 'production', // Use secure in production
+        secure: true, // Use secure in production
         httpOnly: true,
-        sameSite: 'lax' // Important for cross-origin sessions
+        sameSite: 'lax', // Important for cross-origin sessions
+        domain: "blogspot-alpha.vercel.app"
       }
     }));
   }
