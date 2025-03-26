@@ -49,22 +49,50 @@ class AuthController {
         });
       }
 
-      // Create session
-      req.session.user = {
-        id: user.id,
-        name: user.name,
-        email: user.email
-      };
+      // Regenerate session to prevent session fixation
+      return new Promise((resolve, reject) => {
+        req.session.regenerate((err) => {
+          if (err) {
+            console.error('Session regeneration error:', err);
+            return res.status(500).json({
+              error: 'Session creation failed',
+              message: err.message
+            });
+          }
 
-      res.json({
-        message: 'Login successful',
-        user: {
-          id: user.id,
-          name: user.name,
-          email: user.email
-        }
+          // Set user information in session
+          req.session.user = {
+            id: user.id,
+            name: user.name,
+            email: user.email
+          };
+
+          // Save the session
+          req.session.save((saveErr) => {
+            if (saveErr) {
+              console.error('Session save error:', saveErr);
+              return res.status(500).json({
+                error: 'Session save failed',
+                message: saveErr.message
+              });
+            }
+
+            // Send successful response
+            res.json({
+              message: 'Login successful',
+              user: {
+                id: user.id,
+                name: user.name,
+                email: user.email
+              },
+              isAuthenticated: true
+            });
+            resolve();
+          });
+        });
       });
     } catch (error) {
+      console.error('Login error:', error);
       res.status(500).json({
         error: 'Login failed',
         message: error.message
@@ -89,10 +117,15 @@ class AuthController {
   // Get Current User
   static getCurrentUser(req, res) {
     if (req.session.user) {
-      console.log(req.session)
-      res.json({ user: req.session.user, isAuthenticated: true });
+      res.json({
+        user: req.session.user,
+        isAuthenticated: true
+      });
     } else {
-      res.status(401).json({ error: 'Not authenticated' });
+      res.status(401).json({
+        error: 'Not authenticated',
+        isAuthenticated: false
+      });
     }
   }
 }

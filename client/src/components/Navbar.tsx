@@ -20,6 +20,9 @@ export default function Navbar() {
           `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/getUser`,
           {
             withCredentials: true,
+            headers: {
+              'Content-Type': 'application/json',
+            },
           }
         );
         setIsLoggedIn(response.data.isAuthenticated);

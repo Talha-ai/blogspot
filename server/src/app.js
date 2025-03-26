@@ -47,21 +47,27 @@ class App {
       }),
       secret: environmentConfig.AUTH.SESSION_SECRET,
       resave: false,
-      saveUninitialized: false,
+      saveUninitialized: true, // Changed to true
       cookie: {
         maxAge: 1000 * 60 * 60 * 24 * 7, // 1 week
-        secure: process.env.NODE_ENV === 'production', // Only use secure in production
+        secure: process.env.NODE_ENV === 'production',
         httpOnly: true,
-        sameSite: 'none',
+        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
       }
     }));
     this.app.use((req, res, next) => {
-      console.log('Session:', req.session);
-      console.log('Session User:', req.session.user);
-      console.log('Cookies:', req.headers.cookie);
+      console.log('Incoming Request:', {
+        method: req.method,
+        path: req.path,
+        headers: req.headers,
+        session: req.session,
+        sessionUser: req.session?.user
+      });
       next();
     });
   }
+
+
 
   initializeRoutes() {
     // Mount auth routes
