@@ -3,57 +3,19 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import BlogCard from './BlogCard';
-
-// Sample blog data
-const sampleBlogs = [
-  {
-    id: 1,
-    title: 'The Benefits of Cooking with Ghee',
-    image: '/ghee.jpg',
-    content:
-      'Ghee is typically prepared by simmering butter, which is churned from cream, skimming any impurities from the surface, then pouring and retaining the clear liquid fat while discarding the solid residue...',
-    category: 'Cooking',
-  },
-  {
-    id: 2,
-    title: '10 Must-Try Recipes for Beginners',
-    image: '/buttermilk.jpg',
-    content:
-      'Starting your cooking journey can be intimidating, but these 10 recipes are perfect for beginners. They require minimal ingredients and simple techniques while delivering maximum flavor...',
-    category: 'Recipes',
-  },
-  {
-    id: 3,
-    title: 'Healthy Eating Habits for Busy People',
-    image: '/curd.jpg',
-    content:
-      "Maintaining a balanced diet when you're constantly on the go might seem impossible. Here are practical strategies to ensure you're getting the nutrition you need without spending hours in the kitchen...",
-    category: 'Health',
-  },
-  {
-    id: 4,
-    title: 'The Art of Food Presentation',
-    image: '/cheese.jpg',
-    content:
-      'They say we eat with our eyes first. Learn simple yet effective techniques to elevate your home cooking with professional-looking plating and presentation that will impress your guests...',
-    category: 'Tips',
-  },
-];
+import { blogData } from '../app/data/blogData';
 
 const BlogList = () => {
   const [filter, setFilter] = useState('All');
 
   // Get unique categories
-  const categories = [
-    'All',
-    ...new Set(sampleBlogs.map((blog) => blog.category)),
-  ];
+  const categories = ['All', ...new Set(blogData.map((blog) => blog.category))];
 
   // Filter blogs based on selected category
   const filteredBlogs =
     filter === 'All'
-      ? sampleBlogs
-      : sampleBlogs.filter((blog) => blog.category === filter);
+      ? blogData.slice(0, 4) // Show only 4 blogs on homepage
+      : blogData.filter((blog) => blog.category === filter).slice(0, 4);
 
   return (
     <section className="py-16 bg-gray-50">
@@ -82,19 +44,23 @@ const BlogList = () => {
           {filteredBlogs.map((blog) => (
             <BlogCard
               key={blog.id}
+              id={blog.id}
+              slug={blog.slug}
               title={blog.title}
               image={blog.image}
-              content={blog.content}
+              content={blog.excerpt || blog.content.substring(0, 150) + '...'}
+              category={blog.category}
             />
           ))}
         </div>
 
         {/* See more button */}
         <div className="text-center mt-12">
-          <Link href="/blogs">
-            <button className="px-6 py-3 bg-[#2196f3] text-white font-semibold rounded-md hover:bg-blue-600 transition-colors">
-              See More Blogs
-            </button>
+          <Link
+            href="/blogs"
+            className="px-6 py-3 bg-[#2196f3] text-white font-semibold rounded-md hover:bg-blue-600 transition-colors inline-block"
+          >
+            See More Blogs
           </Link>
         </div>
       </div>
