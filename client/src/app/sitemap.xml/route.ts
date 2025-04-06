@@ -4,7 +4,7 @@ export async function GET() {
   const baseUrl = 'https://blogspot-alpha.vercel.app';
 
   // Get all blog URLs
-  const blogUrls = blogData.map((blog) => `${baseUrl}/blog/${blog.id}`);
+  const blogUrls = blogData.map((blog) => `${baseUrl}/blog/${blog.slug}`);
 
   // Add main pages
   const urls = [
