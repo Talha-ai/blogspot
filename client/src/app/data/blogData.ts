@@ -57,16 +57,10 @@ Homemade ghee can be kept at room temperature for several weeks or refrigerated 
     featured: true,
     relatedProducts: [
       {
-        title: 'Premium Organic Grass-Fed Ghee',
-        image: '/organic-ghee.jpg',
-        link: 'https://www.amazon.in/dp/B0123456789',
-        price: '₹599',
-      },
-      {
-        title: 'Traditional Copper Bottom Ghee Pot',
-        image: '/ghee-pot.jpg',
-        link: 'https://www.amazon.in/dp/B0987654321',
-        price: '₹849',
+        title: 'GirOrganic A2 Pure Ghee',
+        image: '/ghee.jpg',
+        link: 'https://amzn.to/4claST1',
+        price: '1351',
       },
     ],
   },
@@ -74,7 +68,7 @@ Homemade ghee can be kept at room temperature for several weeks or refrigerated 
     id: 2,
     title: '10 Must-Try Recipes for Beginners',
     slug: 'must-try-recipes-beginners',
-    image: '/beginner-cooking.jpg',
+    image: '/cheese.jpg',
     excerpt:
       'Starting your cooking journey can be intimidating, but these 10 recipes are perfect for beginners.',
     content: `If you're just starting your culinary journey, the world of cooking can seem overwhelming. But don't worry! Everyone has to start somewhere, and with these beginner-friendly recipes, you'll build confidence and essential skills in the kitchen.
@@ -125,15 +119,16 @@ Homemade ghee can be kept at room temperature for several weeks or refrigerated 
     relatedProducts: [
       {
         title: "Beginner's Cookware Set - 8 Piece",
-        image: '/cookware-set.jpg',
-        link: 'https://www.amazon.in/dp/B0123456987',
-        price: '₹2,499',
+        image: '/cookset.png',
+        link: 'https://amzn.to/4j18BPp',
+        price: '₹2,859',
       },
       {
-        title: 'Kitchen Basics: The Essential Cookbook for Beginners',
-        image: '/cookbook.jpg',
-        link: 'https://www.amazon.in/dp/B0123498765',
-        price: '₹399',
+        title:
+          "Julia's Kitchen Wisdom: Essential Techniques and Recipes from a Lifetime of Cooking",
+        image: '/cookbook.png',
+        link: 'https://amzn.to/420E4Lp',
+        price: '₹971',
       },
     ],
   },
@@ -143,7 +138,7 @@ Homemade ghee can be kept at room temperature for several weeks or refrigerated 
     id: 3,
     title: 'Healthy Eating Habits for Busy People',
     slug: 'healthy-eating-habits-busy-people',
-    image: '/busy-healthy-eating.jpg',
+    image: '/buttermilk.jpg',
     excerpt:
       "Maintaining a balanced diet when you're constantly on the go might seem impossible. Here are practical strategies to ensure you're getting the nutrition you need.",
     content: `In today's fast-paced world, finding time to prepare and eat nutritious meals can feel like an impossible task. Between work deadlines, family responsibilities, and other commitments, nutrition often takes a backseat. However, with some strategic planning and practical habits, even the busiest people can maintain a healthy diet.
@@ -207,15 +202,15 @@ Remember, healthy eating doesn't have to be complex or time-consuming. The key i
     relatedProducts: [
       {
         title: 'Glass Meal Prep Containers - Set of 5',
-        image: '/meal-prep.jpg',
-        link: 'https://www.amazon.in/dp/B0123456321',
-        price: '₹1,299',
+        image: '/meal-prep.png',
+        link: 'https://amzn.to/4clyWoz',
+        price: '₹2,249',
       },
       {
         title: 'Digital Food Scale with Nutritional Calculator',
-        image: '/food-scale.jpg',
-        link: 'https://www.amazon.in/dp/B0987612345',
-        price: '₹899',
+        image: '/food-scale.png',
+        link: 'https://amzn.to/3FSEriH',
+        price: '₹799',
       },
     ],
   },
@@ -223,7 +218,7 @@ Remember, healthy eating doesn't have to be complex or time-consuming. The key i
     id: 4,
     title: 'The Science of Sleep: Why Quality Rest Matters More Than Quantity',
     slug: 'science-of-sleep-quality-over-quantity',
-    image: '/sleep.jpg',
+    image: '/sleep.png',
     excerpt:
       'Recent research reveals that the quality of your sleep matters more than the number of hours. Learn how to optimize your sleep cycles for better health.',
     content: `We've all heard that eight hours is the golden standard for sleep, but emerging research suggests that sleep quality might matter more than the number on your sleep tracker. Understanding sleep cycles and optimizing your rest environment can transform your health and cognitive function more effectively than simply extending your time in bed.
@@ -285,15 +280,15 @@ By focusing on sleep quality rather than quantity, many people find they can act
     relatedProducts: [
       {
         title: 'Smart Sleep Tracker with Daily Analytics',
-        image: '/sleep-tracker.jpg',
-        link: 'https://www.amazon.in/dp/B0123456123',
-        price: '₹2,899',
+        image: '/sleep-tracker.png',
+        link: 'https://amzn.to/42hihxV',
+        price: '₹13,110',
       },
       {
         title: 'Weighted Blanket for Better Sleep',
-        image: '/weighted-blanket.jpg',
-        link: 'https://www.amazon.in/dp/B0987612789',
-        price: '₹3,599',
+        image: '/weighted-blanket.png',
+        link: 'https://amzn.to/4j0yPBw',
+        price: '₹4,999',
       },
     ],
   },
@@ -304,7 +299,7 @@ By focusing on sleep quality rather than quantity, many people find they can act
     id: 6,
     title: 'The Future of AI: What to Expect in the Next Decade',
     slug: 'future-of-ai-next-decade',
-    image: '/ai-future.jpg',
+    image: '/ai-future.png',
     excerpt:
       'Explore how artificial intelligence will transform industries, create new opportunities, and reshape our daily lives in the coming years.',
     content: `The pace of innovation in artificial intelligence has accelerated dramatically in recent years, transforming from an academic curiosity to a technology that touches virtually every industry. As we look toward the next decade, several key trends and developments will likely reshape how we live and work.
@@ -377,145 +372,145 @@ The next decade of AI will bring both tremendous opportunities and significant c
     relatedProducts: [
       {
         title: 'AI Business Applications: Strategy and Implementation',
-        image: '/ai-book.jpg',
-        link: 'https://www.amazon.in/dp/B0123456222',
-        price: '₹699',
+        image: '/ai-book.png',
+        link: 'https://amzn.to/3XJgikD',
+        price: '1,664',
       },
-      {
-        title: 'Advanced Machine Learning Certification Course',
-        image: '/ml-course.jpg',
-        link: 'https://www.amazon.in/dp/B0987612333',
-        price: '₹2,999',
-      },
+      // {
+      //   title: 'Advanced Machine Learning Certification Course',
+      //   image: '/ml-course.jpg',
+      //   link: 'https://www.amazon.in/dp/B0987612333',
+      //   price: '₹2,999',
+      // },
     ],
   },
 
   // Sports Category
-  {
-    id: 7,
-    title: 'The Science of Endurance Training: Maximizing Performance',
-    slug: 'science-endurance-training',
-    image: '/endurance.jpg',
-    excerpt:
-      "Learn the physiological principles and evidence-based methods to improve your endurance performance, whether you're a runner, cyclist, or triathlete.",
-    content: `Endurance athletes are constantly searching for ways to improve performance, extend their limits, and recover faster. Modern sports science has revealed that optimal endurance training isn't just about logging hours and kilometers—it's about strategic training that targets specific physiological adaptations. This comprehensive guide explores the science behind endurance performance and provides actionable strategies for athletes at all levels.
+  //   {
+  //     id: 7,
+  //     title: 'The Science of Endurance Training: Maximizing Performance',
+  //     slug: 'science-endurance-training',
+  //     image: '/endurance.jpg',
+  //     excerpt:
+  //       "Learn the physiological principles and evidence-based methods to improve your endurance performance, whether you're a runner, cyclist, or triathlete.",
+  //     content: `Endurance athletes are constantly searching for ways to improve performance, extend their limits, and recover faster. Modern sports science has revealed that optimal endurance training isn't just about logging hours and kilometers—it's about strategic training that targets specific physiological adaptations. This comprehensive guide explores the science behind endurance performance and provides actionable strategies for athletes at all levels.
 
-## Understanding Your Energy Systems
+  // ## Understanding Your Energy Systems
 
-Endurance performance relies on three primary energy systems:
+  // Endurance performance relies on three primary energy systems:
 
-1. **ATP-PC System**: Provides immediate energy for short, powerful efforts (5-10 seconds)
-2. **Glycolytic System**: Fuels moderate intensity efforts (30 seconds to 3 minutes)
-3. **Aerobic System**: Powers prolonged exercise through efficient fat and carbohydrate metabolism
+  // 1. **ATP-PC System**: Provides immediate energy for short, powerful efforts (5-10 seconds)
+  // 2. **Glycolytic System**: Fuels moderate intensity efforts (30 seconds to 3 minutes)
+  // 3. **Aerobic System**: Powers prolonged exercise through efficient fat and carbohydrate metabolism
 
-For endurance athletes, developing a robust aerobic system is paramount, but neglecting the other energy systems can limit overall performance.
+  // For endurance athletes, developing a robust aerobic system is paramount, but neglecting the other energy systems can limit overall performance.
 
-## Key Physiological Adaptations
+  // ## Key Physiological Adaptations
 
-Strategic training targets these critical adaptations:
+  // Strategic training targets these critical adaptations:
 
-### Cardiovascular Adaptations
-- Increased stroke volume (amount of blood pumped per heartbeat)
-- Enhanced cardiac output (total blood pumped per minute)
-- Expanded plasma volume for better thermoregulation
+  // ### Cardiovascular Adaptations
+  // - Increased stroke volume (amount of blood pumped per heartbeat)
+  // - Enhanced cardiac output (total blood pumped per minute)
+  // - Expanded plasma volume for better thermoregulation
 
-### Muscular Adaptations
-- Increased mitochondrial density for better oxygen utilization
-- Enhanced capillarization for improved nutrient and oxygen delivery
-- Greater efficiency in slow-twitch muscle fiber recruitment
+  // ### Muscular Adaptations
+  // - Increased mitochondrial density for better oxygen utilization
+  // - Enhanced capillarization for improved nutrient and oxygen delivery
+  // - Greater efficiency in slow-twitch muscle fiber recruitment
 
-### Metabolic Adaptations
-- Improved fat oxidation, sparing precious glycogen stores
-- Elevated lactate threshold, delaying the onset of fatigue
-- Enhanced glycogen storage capacity
+  // ### Metabolic Adaptations
+  // - Improved fat oxidation, sparing precious glycogen stores
+  // - Elevated lactate threshold, delaying the onset of fatigue
+  // - Enhanced glycogen storage capacity
 
-## Evidence-Based Training Methods
+  // ## Evidence-Based Training Methods
 
-### Polarized Training
-Research consistently shows that elite endurance athletes follow a polarized approach:
-- 80% of training at low intensity (below ventilatory threshold)
-- 20% at high intensity (above lactate threshold)
-- Minimal time spent in the moderate-intensity "gray zone"
+  // ### Polarized Training
+  // Research consistently shows that elite endurance athletes follow a polarized approach:
+  // - 80% of training at low intensity (below ventilatory threshold)
+  // - 20% at high intensity (above lactate threshold)
+  // - Minimal time spent in the moderate-intensity "gray zone"
 
-This distribution maximizes adaptations while minimizing overtraining risk.
+  // This distribution maximizes adaptations while minimizing overtraining risk.
 
-### High-Intensity Interval Training (HIIT)
-Strategic implementation of HIIT sessions produces outsized benefits:
-- VO2max improvements of 6-8% in already trained athletes
-- Enhanced exercise economy and efficiency
-- Improved lactate buffering capacity
+  // ### High-Intensity Interval Training (HIIT)
+  // Strategic implementation of HIIT sessions produces outsized benefits:
+  // - VO2max improvements of 6-8% in already trained athletes
+  // - Enhanced exercise economy and efficiency
+  // - Improved lactate buffering capacity
 
-**Sample HIIT Session:** 6-8 × 3-minute intervals at 90-95% of maximum heart rate with 2-minute active recovery periods
+  // **Sample HIIT Session:** 6-8 × 3-minute intervals at 90-95% of maximum heart rate with 2-minute active recovery periods
 
-### Long, Slow Distance (LSD)
-Extended low-intensity sessions drive crucial adaptations:
-- Enhanced fat metabolism
-- Increased capillarization
-- Improved running/cycling economy
-- Mental resilience development
+  // ### Long, Slow Distance (LSD)
+  // Extended low-intensity sessions drive crucial adaptations:
+  // - Enhanced fat metabolism
+  // - Increased capillarization
+  // - Improved running/cycling economy
+  // - Mental resilience development
 
-**Recommendation:** Weekly session of 2-3 hours at 65-75% of maximum heart rate
+  // **Recommendation:** Weekly session of 2-3 hours at 65-75% of maximum heart rate
 
-### Strength Training for Endurance
-Contrary to old beliefs, strength training significantly benefits endurance athletes:
-- Improved movement economy through better force production
-- Injury prevention through enhanced structural integrity
-- Delayed onset of fatigue in working muscles
+  // ### Strength Training for Endurance
+  // Contrary to old beliefs, strength training significantly benefits endurance athletes:
+  // - Improved movement economy through better force production
+  // - Injury prevention through enhanced structural integrity
+  // - Delayed onset of fatigue in working muscles
 
-**Key Exercises:** Squats, deadlifts, lunges, and plyometric movements
+  // **Key Exercises:** Squats, deadlifts, lunges, and plyometric movements
 
-## Periodization: Structuring Your Training Year
+  // ## Periodization: Structuring Your Training Year
 
-Strategic periodization organizes training phases for peak performance:
+  // Strategic periodization organizes training phases for peak performance:
 
-1. **Base Phase**: Build aerobic capacity and structural strength
-2. **Build Phase**: Develop sport-specific fitness and intensity
-3. **Peak Phase**: Sharpen performance and reduce volume
-4. **Recovery Phase**: Active recovery and mental refreshment
+  // 1. **Base Phase**: Build aerobic capacity and structural strength
+  // 2. **Build Phase**: Develop sport-specific fitness and intensity
+  // 3. **Peak Phase**: Sharpen performance and reduce volume
+  // 4. **Recovery Phase**: Active recovery and mental refreshment
 
-## Nutrition and Recovery Strategies
+  // ## Nutrition and Recovery Strategies
 
-Optimal nutrition amplifies training adaptations:
-- Carbohydrate periodization to enhance metabolic flexibility
-- Protein timing for muscular repair and adaptation
-- Strategic hydration and electrolyte replacement
+  // Optimal nutrition amplifies training adaptations:
+  // - Carbohydrate periodization to enhance metabolic flexibility
+  // - Protein timing for muscular repair and adaptation
+  // - Strategic hydration and electrolyte replacement
 
-Recovery techniques with scientific support:
-- Compression garments for enhanced blood flow
-- Cold water immersion for inflammation reduction
-- Sleep optimization for hormonal balance and tissue repair
+  // Recovery techniques with scientific support:
+  // - Compression garments for enhanced blood flow
+  // - Cold water immersion for inflammation reduction
+  // - Sleep optimization for hormonal balance and tissue repair
 
-## Monitoring and Adjustment
+  // ## Monitoring and Adjustment
 
-Track these metrics to guide training decisions:
-- Heart rate variability (HRV) for autonomic nervous system status
-- Resting heart rate trends
-- Perceived exertion versus objective metrics
-- Performance testing at regular intervals
+  // Track these metrics to guide training decisions:
+  // - Heart rate variability (HRV) for autonomic nervous system status
+  // - Resting heart rate trends
+  // - Perceived exertion versus objective metrics
+  // - Performance testing at regular intervals
 
-By applying these scientific principles to your endurance training, you can maximize adaptations while minimizing injury risk and burnout. Remember that individual response to training varies significantly—the most effective approach combines evidence-based methods with careful attention to your body's feedback.`,
-    category: 'Sports',
-    publishDate: '2025-03-18',
-    relatedProducts: [
-      {
-        title: 'Advanced GPS Running Watch with Heart Rate Monitor',
-        image: '/gps-watch.jpg',
-        link: 'https://www.amazon.in/dp/B0123456333',
-        price: '₹22,499',
-      },
-      {
-        title: 'Carbon Fiber Racing Bicycle',
-        image: '/carbon-bike.jpg',
-        link: 'https://www.amazon.in/dp/B0987612444',
-        price: '₹125,000',
-      },
-    ],
-  },
+  // By applying these scientific principles to your endurance training, you can maximize adaptations while minimizing injury risk and burnout. Remember that individual response to training varies significantly—the most effective approach combines evidence-based methods with careful attention to your body's feedback.`,
+  //     category: 'Sports',
+  //     publishDate: '2025-03-18',
+  //     relatedProducts: [
+  //       // {
+  //       //   title: 'Advanced GPS Running Watch with Heart Rate Monitor',
+  //       //   image: '/gps-watch.jpg',
+  //       //   link: 'https://www.amazon.in/dp/B0123456333',
+  //       //   price: '₹22,499',
+  //       // },
+  //       {
+  //         title: 'Carbon Fiber Racing Bicycle',
+  //         image: '/carbon-bike.jpg',
+  //         link: 'https://www.amazon.in/dp/B0987612444',
+  //         price: '₹125,000',
+  //       },
+  //     ],
+  //   },
   {
     id: 8,
     title: 'Cricket Technique Revolution: Modern Batting Approaches',
     slug: 'cricket-technique-revolution',
-    image: '/cricket.jpg',
+    image: '/cricket.png',
     excerpt:
       'Explore how T20 cricket has transformed batting techniques across all formats of the game, and what amateur players can learn from these innovations.',
     content: `Cricket batting technique has undergone a remarkable transformation over the past decade. The traditional orthodoxy that dominated for generations has been challenged and, in many cases, replaced by innovative approaches born from T20 cricket. This evolution hasn't just changed the shortest format—it's revolutionized batting across all forms of the game, from Test matches to domestic competitions.
@@ -606,391 +601,391 @@ Cricket batting continues to evolve, with each generation building on and challe
     relatedProducts: [
       {
         title: 'Professional Cricket Batting Gloves',
-        image: '/cricket-gloves.jpg',
-        link: 'https://www.amazon.in/dp/B0123456444',
-        price: '₹2,499',
+        image: '/cricket-gloves.png',
+        link: 'https://amzn.to/4cEDZRv',
+        price: '₹2,899',
       },
-      {
-        title: 'English Willow Cricket Bat',
-        image: '/cricket-bat.jpg',
-        link: 'https://www.amazon.in/dp/B0987612555',
-        price: '₹12,999',
-      },
+      // {
+      //   title: 'English Willow Cricket Bat',
+      //   image: '/cricket-bat.jpg',
+      //   link: 'https://www.amazon.in/dp/B0987612555',
+      //   price: '₹12,999',
+      // },
     ],
   },
 
   // Others Category
-  {
-    id: 9,
-    title: 'Sustainable Urban Gardens: Growing Food in Limited Spaces',
-    slug: 'sustainable-urban-gardens',
-    image: '/urban-garden.jpg',
-    excerpt:
-      'Discover practical techniques for creating productive food gardens in apartments, balconies, and small urban spaces.',
-    content: `Urban gardening has evolved from a niche hobby to an essential skill for sustainable city living. With increasing concerns about food security and quality, growing your own produce even in the smallest spaces has become both practical and rewarding. This guide explores how anyone can create a productive food garden regardless of space limitations.
-
-## Understanding Urban Space Constraints
-
-Space limitations in cities require creative approaches to gardening:
-- Vertical surfaces offer extensive growing area
-- Balconies and windowsills receive varying light exposure
-- Container gardening allows for mobility and adaptation
-- Microclimates created by buildings affect growing conditions
-
-## Selecting the Right Growing System
-
-Different urban environments call for different growing approaches:
-
-### Container Gardens
-Versatile and portable, containers work in almost any setting:
-- Self-watering containers reduce maintenance needs
-- Fabric pots improve aeration and prevent root circling
-- Repurposed items (buckets, bottles, old furniture) reduce costs and waste
-
-### Vertical Systems
-Maximize production in minimal horizontal space:
-- Wall-mounted planters for herbs and leafy greens
-- Tiered stands to create multiple growing levels
-- Trellis systems for vining crops like cucumbers and beans
-- Living walls that combine aesthetics with food production
-
-### Small-Space Hydroponics
-Soil-free growing offers exceptional efficiency:
-- Window-mounted nutrient film technique (NFT) systems
-- Kratky method using simple containers and minimal equipment
-- Small deep water culture systems for leafy greens
-
-## Choosing Productive Urban Crops
-
-Not all plants thrive in urban conditions. Focus on:
-
-### High-Value Crops
-- Fresh herbs that would be expensive to purchase
-- Cut-and-come-again leafy greens for continuous harvesting
-- Cherry tomatoes and dwarf varieties of larger vegetables
-
-### Succession Planting
-Maximize your harvest through strategic timing:
-- Quick-growing crops between longer-season plants
-- Cool-season followed by warm-season varieties
-- Continuous sowing of fast-maturing vegetables
-
-### Space-Efficient Varieties
-- Determinate and dwarf varieties that stay compact
-- Vertical growers that can be trained upward
-- Cut-and-come-again varieties providing multiple harvests
-
-## Soil Health in Container Environments
-
-Urban gardening success depends on soil management:
-- Quality potting mixes specifically formulated for containers
-- Organic matter incorporation for moisture retention
-- Controlled-release fertilizers for consistent nutrition
-- Compost tea applications to introduce beneficial microorganisms
-
-## Water Management Solutions
-
-Water conservation is crucial in urban settings:
-- Self-watering systems using wicking reservoirs
-- Drip irrigation with timers for consistent moisture
-- Rainwater harvesting even from small catchment areas
-- Mulching to reduce evaporation and water needs
-
-## Dealing with Urban Challenges
-
-City environments present unique gardening obstacles:
-
-### Light Management
-- Reflective surfaces to maximize available light
-- Strategic placement based on sun tracking
-- Supplemental grow lights for indoor areas
-- Plant selection based on light requirements
-
-### Pest Management
-Urban environments have different pest pressures:
-- Physical barriers like floating row covers
-- Companion planting to deter common pests
-- Biological controls appropriate for small spaces
-- Manual removal and monitoring
-
-## Building Community Through Urban Growing
-
-Urban gardening extends beyond personal food production:
-- Community garden participation when space is severely limited
-- Skill sharing among urban gardeners
-- Seed and harvest exchanges to increase variety
-- Collaborative projects like pollinator corridors
-
-Growing food in urban environments combines ancient agricultural wisdom with modern space utilization techniques. Whether you have a sunny windowsill or a small balcony, sustainable food production is within reach. Start small, observe your unique conditions, and gradually expand your urban garden into a productive and rewarding food source.`,
-    category: 'Others',
-    publishDate: '2025-03-28',
-    relatedProducts: [
-      {
-        title: 'Vertical Garden Wall Planter',
-        image: '/vertical-planter.jpg',
-        link: 'https://www.amazon.in/dp/B0765432111',
-        price: '₹1,799',
-      },
-      {
-        title: 'Self-Watering Herb Pot Set',
-        image: '/herb-pots.jpg',
-        link: 'https://www.amazon.in/dp/B0345678999',
-        price: '₹1,299',
-      },
-    ],
-  },
-  {
-    id: 10,
-    title: 'Digital Minimalism: Reclaiming Focus in a Distracted World',
-    slug: 'digital-minimalism',
-    image: '/digital-minimal.jpg',
-    excerpt:
-      'Learn practical strategies for reducing digital clutter and creating a more intentional relationship with technology in your daily life.',
-    content: `In an age of information abundance and constant connectivity, many of us find ourselves overwhelmed by digital noise. Notifications interrupt our thoughts, endless feeds consume our time, and digital clutter fragments our attention. Digital minimalism offers a thoughtful approach to technology use that can help reclaim mental space and improve well-being.
-
-## Understanding Digital Minimalism
-
-Digital minimalism isn't about rejecting technology—it's about using it more intentionally:
-- Focusing on tools that support your values
-- Eliminating low-value digital consumption
-- Creating healthy boundaries between online and offline life
-- Maximizing the benefits of technology while minimizing its costs
-
-## The Attention Economy Crisis
-
-Modern digital platforms are specifically designed to capture and hold attention:
-- Variable reward mechanisms that create compulsive checking habits
-- Infinite scrolling that eliminates natural stopping points
-- Algorithmic content selection that optimizes for engagement over value
-- Social feedback loops that create psychological dependency
-
-This environment has led to fragmented attention, decreased deep work capacity, and reduced control over how we spend our time.
-
-## Core Principles of Digital Minimalism
-
-### 1. Clutter is Costly
-Every app, service, and digital subscription has an attention cost beyond its financial price. Digital minimalists recognize that unused or marginally useful digital tools still consume mental bandwidth.
-
-### 2. Optimization is Important
-Using the right digital tools in the right way can dramatically improve productivity and well-being. The goal isn't less technology, but better technology use.
-
-### 3. Intentionality is Satisfying
-Making deliberate choices about technology creates a sense of autonomy and reduces the feeling of being controlled by devices.
-
-## Practical Digital Minimalism Strategies
-
-### Digital Decluttering
-Start with a comprehensive cleanup:
-- Remove unused apps from your phone and computer
-- Unsubscribe from email lists that don't provide consistent value
-- Consolidate accounts and services where possible
-- Delete old files, photos, and digital assets you no longer need
-
-### Attention Protection
-Create systems that safeguard your focus:
-- Batch process emails and messages at designated times
-- Use website blockers during focused work periods
-- Create device-free zones and times in your home
-- Configure notifications to minimize interruptions
-
-### Content Curation
-Be selective about what you consume:
-- Follow the "information diet" principle—quality over quantity
-- Use RSS readers to directly access valuable content
-- Create reading lists rather than endless browsing
-- Choose long-form content over endless short-form consumption
-
-### Social Media Reimagined
-Transform how you use social platforms:
-- Consider accessing social media only through browsers, not apps
-- Limit usage to specific purposes rather than default time-filling
-- Regularly audit who you follow based on value provided
-- Schedule specific check-in times rather than throughout the day
-
-## Building a Digital Minimalism Practice
-
-### The 30-Day Reset
-Begin with a temporary break from optional technologies:
-1. Identify essential technology uses in your work and personal life
-2. Remove all non-essential technology for 30 days
-3. Use this period to rediscover offline activities and interests
-4. Reintroduce technologies selectively with specific usage rules
-
-### Creating Technology Rules
-Develop personal policies for technology use:
-- No devices during the first and last hour of the day
-- Social media only after important work is complete
-- Email processed in 2-3 designated blocks each day
-- One day per week with minimal technology use
-
-### Replacing Digital with Analog
-Find satisfying alternatives to digital consumption:
-- Physical books instead of endless internet articles
-- In-person conversations instead of social media browsing
-- Creative hobbies that produce tangible results
-- Nature experiences that engage all senses
-
-## Measuring Success
-
-Digital minimalism success isn't measured by screen time alone:
-- Increased ability to concentrate for extended periods
-- Greater satisfaction with how time is spent
-- Reduced anxiety about missing online activity
-- More meaningful relationships and experiences
-
-By approaching technology with greater intentionality, we can harness its benefits while avoiding its pitfalls. Digital minimalism isn't about perfection—it's about creating a digital life that aligns with your deepest values and aspirations.`,
-    category: 'Others',
-    publishDate: '2025-03-15',
-    relatedProducts: [
-      {
-        title: 'Paper Planner and Journal Set',
-        image: '/paper-planner.jpg',
-        link: 'https://www.amazon.in/dp/B0987654321',
-        price: '₹1,199',
-      },
-      {
-        title: 'Digital Wellness Timer',
-        image: '/focus-timer.jpg',
-        link: 'https://www.amazon.in/dp/B0123987654',
-        price: '₹899',
-      },
-    ],
-  },
-  {
-    id: 11,
-    title:
-      'Fermentation Fundamentals: Preserving Food Through Ancient Techniques',
-    slug: 'fermentation-fundamentals',
-    image: '/fermentation.jpg',
-    excerpt:
-      'Discover how to preserve food while enhancing flavor and nutrition using traditional fermentation methods from around the world.',
-    content: `Fermentation is one of humanity's oldest food preservation methods, dating back thousands of years. Beyond simply extending shelf life, fermentation transforms ordinary ingredients into foods with complex flavors, enhanced nutrition, and probiotic benefits. This ancient practice is experiencing a modern revival as people seek connections to traditional food ways and greater control over their food supply.
-
-## The Science Behind Fermentation
-
-At its core, fermentation is controlled decomposition:
-- Beneficial microorganisms convert sugars into acids, gases, or alcohol
-- The resulting environment prevents harmful bacteria from growing
-- Enzymatic processes break down complex compounds into more digestible forms
-- Flavor compounds develop through microbial metabolism
-
-## Primary Types of Fermentation
-
-### Lactic Acid Fermentation
-The most common home fermentation method:
-- Lactobacillus bacteria convert sugars to lactic acid
-- Creates tangy, acidic foods like sauerkraut and pickles
-- Typically occurs in anaerobic (oxygen-free) environments
-- Often requires only salt and vegetables to begin
-
-### Alcoholic Fermentation
-Yeast-driven fermentation that produces ethanol:
-- Used for beverages like beer, wine, and mead
-- Also used in bread making for leavening
-- Often requires careful control of sugar content and environment
-- Produces carbon dioxide as a byproduct
-
-### Acetic Acid Fermentation
-Transforms alcohol into vinegar:
-- Acetobacter bacteria convert ethanol to acetic acid
-- Requires oxygen (aerobic environment)
-- Creates versatile culinary ingredients like vinegar
-- Often follows alcoholic fermentation
-
-## Essential Equipment for Home Fermentation
-
-Most fermentation requires minimal specialized equipment:
-- Glass or ceramic vessels (avoid reactive metals)
-- Weights to keep food submerged (for vegetable fermentation)
-- Airlocks or other oxygen control methods
-- Thermometers for temperature-sensitive fermentations
-- pH strips for monitoring acidity levels
-
-## Starter Fermentation Projects
-
-### Vegetable Fermentation
-Perfect for beginners:
-- Sauerkraut: Just cabbage and salt
-- Kimchi: Korean fermented vegetables with spices
-- Pickles: Cucumbers transformed by lactic acid bacteria
-- Cortido: Latin American fermented cabbage slaw
-
-### Dairy Fermentation
-Transform milk into a variety of products:
-- Yogurt: Thickened, acidified milk
-- Kefir: Effervescent, probiotic milk drink
-- Cheese: From simple fresh cheese to complex aged varieties
-- Cultured butter: With enhanced flavor complexity
-
-### Grain Fermentation
-Adding digestibility and flavor to grains:
-- Sourdough bread: Using wild yeast cultures
-- Injera: Ethiopian fermented flatbread
-- Idli and dosa: South Indian fermented rice and lentil preparations
-- Kvass: Eastern European fermented bread drink
-
-## Controlling Fermentation Variables
-
-Successful fermentation depends on managing key factors:
-
-### Salt Concentration
-- Functions as a selective growth inhibitor
-- Typically 2-5% by weight for vegetables
-- Creates environment favoring desired microorganisms
-- Affects final texture and flavor development
-
-### Temperature
-- Higher temperatures accelerate fermentation (generally 65-75°F ideal)
-- Lower temperatures slow process but may improve flavor
-- Extreme temperatures can inhibit desired microbes or favor undesired ones
-- Consistency often more important than specific temperature
-
-### Time
-- Longer fermentations develop stronger flavors
-- Short fermentations maintain more fresh character
-- Timing depends on desired outcome and environmental conditions
-- Taste testing is essential for determining doneness
-
-## Safety Considerations
-
-Fermentation is remarkably safe when properly done:
-- Acidification prevents pathogen growth
-- Visual inspection can identify problematic ferments
-- Proper sanitation reduces contamination risk
-- Trust your senses—off odors or colors indicate problems
-
-## Beyond Basics: Advanced Techniques
-
-### Mixed Culture Fermentation
-- Using multiple microbial species for complex results
-- Examples include kombucha, kefir, and sourdough
-- Requires maintenance of microbial balance
-- Often uses a starter culture or SCOBY
-
-### Wild Fermentation
-- Relying on naturally occurring microorganisms
-- Connects to local microbial terroir
-- More variable but potentially unique results
-- Examples include wild sourdough and natural wine
-
-Fermentation connects us to food traditions practiced across generations and cultures. By mastering these techniques, you not only create delicious, nutritious foods but also participate in a living cultural heritage that spans the globe and reaches back to the very beginnings of human culinary history.`,
-    category: 'Others',
-    publishDate: '2025-04-05',
-    relatedProducts: [
-      {
-        title: 'Fermentation Crock with Weights',
-        image: '/fermentation-crock.jpg',
-        link: 'https://www.amazon.in/dp/B0192837465',
-        price: '₹3,499',
-      },
-      {
-        title: 'Complete Home Fermentation Kit',
-        image: '/fermentation-kit.jpg',
-        link: 'https://www.amazon.in/dp/B0918273645',
-        price: '₹2,799',
-      },
-    ],
-  },
+  //   {
+  //     id: 9,
+  //     title: 'Sustainable Urban Gardens: Growing Food in Limited Spaces',
+  //     slug: 'sustainable-urban-gardens',
+  //     image: '/urban-garden.jpg',
+  //     excerpt:
+  //       'Discover practical techniques for creating productive food gardens in apartments, balconies, and small urban spaces.',
+  //     content: `Urban gardening has evolved from a niche hobby to an essential skill for sustainable city living. With increasing concerns about food security and quality, growing your own produce even in the smallest spaces has become both practical and rewarding. This guide explores how anyone can create a productive food garden regardless of space limitations.
+
+  // ## Understanding Urban Space Constraints
+
+  // Space limitations in cities require creative approaches to gardening:
+  // - Vertical surfaces offer extensive growing area
+  // - Balconies and windowsills receive varying light exposure
+  // - Container gardening allows for mobility and adaptation
+  // - Microclimates created by buildings affect growing conditions
+
+  // ## Selecting the Right Growing System
+
+  // Different urban environments call for different growing approaches:
+
+  // ### Container Gardens
+  // Versatile and portable, containers work in almost any setting:
+  // - Self-watering containers reduce maintenance needs
+  // - Fabric pots improve aeration and prevent root circling
+  // - Repurposed items (buckets, bottles, old furniture) reduce costs and waste
+
+  // ### Vertical Systems
+  // Maximize production in minimal horizontal space:
+  // - Wall-mounted planters for herbs and leafy greens
+  // - Tiered stands to create multiple growing levels
+  // - Trellis systems for vining crops like cucumbers and beans
+  // - Living walls that combine aesthetics with food production
+
+  // ### Small-Space Hydroponics
+  // Soil-free growing offers exceptional efficiency:
+  // - Window-mounted nutrient film technique (NFT) systems
+  // - Kratky method using simple containers and minimal equipment
+  // - Small deep water culture systems for leafy greens
+
+  // ## Choosing Productive Urban Crops
+
+  // Not all plants thrive in urban conditions. Focus on:
+
+  // ### High-Value Crops
+  // - Fresh herbs that would be expensive to purchase
+  // - Cut-and-come-again leafy greens for continuous harvesting
+  // - Cherry tomatoes and dwarf varieties of larger vegetables
+
+  // ### Succession Planting
+  // Maximize your harvest through strategic timing:
+  // - Quick-growing crops between longer-season plants
+  // - Cool-season followed by warm-season varieties
+  // - Continuous sowing of fast-maturing vegetables
+
+  // ### Space-Efficient Varieties
+  // - Determinate and dwarf varieties that stay compact
+  // - Vertical growers that can be trained upward
+  // - Cut-and-come-again varieties providing multiple harvests
+
+  // ## Soil Health in Container Environments
+
+  // Urban gardening success depends on soil management:
+  // - Quality potting mixes specifically formulated for containers
+  // - Organic matter incorporation for moisture retention
+  // - Controlled-release fertilizers for consistent nutrition
+  // - Compost tea applications to introduce beneficial microorganisms
+
+  // ## Water Management Solutions
+
+  // Water conservation is crucial in urban settings:
+  // - Self-watering systems using wicking reservoirs
+  // - Drip irrigation with timers for consistent moisture
+  // - Rainwater harvesting even from small catchment areas
+  // - Mulching to reduce evaporation and water needs
+
+  // ## Dealing with Urban Challenges
+
+  // City environments present unique gardening obstacles:
+
+  // ### Light Management
+  // - Reflective surfaces to maximize available light
+  // - Strategic placement based on sun tracking
+  // - Supplemental grow lights for indoor areas
+  // - Plant selection based on light requirements
+
+  // ### Pest Management
+  // Urban environments have different pest pressures:
+  // - Physical barriers like floating row covers
+  // - Companion planting to deter common pests
+  // - Biological controls appropriate for small spaces
+  // - Manual removal and monitoring
+
+  // ## Building Community Through Urban Growing
+
+  // Urban gardening extends beyond personal food production:
+  // - Community garden participation when space is severely limited
+  // - Skill sharing among urban gardeners
+  // - Seed and harvest exchanges to increase variety
+  // - Collaborative projects like pollinator corridors
+
+  // Growing food in urban environments combines ancient agricultural wisdom with modern space utilization techniques. Whether you have a sunny windowsill or a small balcony, sustainable food production is within reach. Start small, observe your unique conditions, and gradually expand your urban garden into a productive and rewarding food source.`,
+  //     category: 'Others',
+  //     publishDate: '2025-03-28',
+  //     relatedProducts: [
+  //       {
+  //         title: 'Vertical Garden Wall Planter',
+  //         image: '/vertical-planter.jpg',
+  //         link: 'https://www.amazon.in/dp/B0765432111',
+  //         price: '₹1,799',
+  //       },
+  //       {
+  //         title: 'Self-Watering Herb Pot Set',
+  //         image: '/herb-pots.jpg',
+  //         link: 'https://www.amazon.in/dp/B0345678999',
+  //         price: '₹1,299',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 10,
+  //     title: 'Digital Minimalism: Reclaiming Focus in a Distracted World',
+  //     slug: 'digital-minimalism',
+  //     image: '/digital-minimal.jpg',
+  //     excerpt:
+  //       'Learn practical strategies for reducing digital clutter and creating a more intentional relationship with technology in your daily life.',
+  //     content: `In an age of information abundance and constant connectivity, many of us find ourselves overwhelmed by digital noise. Notifications interrupt our thoughts, endless feeds consume our time, and digital clutter fragments our attention. Digital minimalism offers a thoughtful approach to technology use that can help reclaim mental space and improve well-being.
+
+  // ## Understanding Digital Minimalism
+
+  // Digital minimalism isn't about rejecting technology—it's about using it more intentionally:
+  // - Focusing on tools that support your values
+  // - Eliminating low-value digital consumption
+  // - Creating healthy boundaries between online and offline life
+  // - Maximizing the benefits of technology while minimizing its costs
+
+  // ## The Attention Economy Crisis
+
+  // Modern digital platforms are specifically designed to capture and hold attention:
+  // - Variable reward mechanisms that create compulsive checking habits
+  // - Infinite scrolling that eliminates natural stopping points
+  // - Algorithmic content selection that optimizes for engagement over value
+  // - Social feedback loops that create psychological dependency
+
+  // This environment has led to fragmented attention, decreased deep work capacity, and reduced control over how we spend our time.
+
+  // ## Core Principles of Digital Minimalism
+
+  // ### 1. Clutter is Costly
+  // Every app, service, and digital subscription has an attention cost beyond its financial price. Digital minimalists recognize that unused or marginally useful digital tools still consume mental bandwidth.
+
+  // ### 2. Optimization is Important
+  // Using the right digital tools in the right way can dramatically improve productivity and well-being. The goal isn't less technology, but better technology use.
+
+  // ### 3. Intentionality is Satisfying
+  // Making deliberate choices about technology creates a sense of autonomy and reduces the feeling of being controlled by devices.
+
+  // ## Practical Digital Minimalism Strategies
+
+  // ### Digital Decluttering
+  // Start with a comprehensive cleanup:
+  // - Remove unused apps from your phone and computer
+  // - Unsubscribe from email lists that don't provide consistent value
+  // - Consolidate accounts and services where possible
+  // - Delete old files, photos, and digital assets you no longer need
+
+  // ### Attention Protection
+  // Create systems that safeguard your focus:
+  // - Batch process emails and messages at designated times
+  // - Use website blockers during focused work periods
+  // - Create device-free zones and times in your home
+  // - Configure notifications to minimize interruptions
+
+  // ### Content Curation
+  // Be selective about what you consume:
+  // - Follow the "information diet" principle—quality over quantity
+  // - Use RSS readers to directly access valuable content
+  // - Create reading lists rather than endless browsing
+  // - Choose long-form content over endless short-form consumption
+
+  // ### Social Media Reimagined
+  // Transform how you use social platforms:
+  // - Consider accessing social media only through browsers, not apps
+  // - Limit usage to specific purposes rather than default time-filling
+  // - Regularly audit who you follow based on value provided
+  // - Schedule specific check-in times rather than throughout the day
+
+  // ## Building a Digital Minimalism Practice
+
+  // ### The 30-Day Reset
+  // Begin with a temporary break from optional technologies:
+  // 1. Identify essential technology uses in your work and personal life
+  // 2. Remove all non-essential technology for 30 days
+  // 3. Use this period to rediscover offline activities and interests
+  // 4. Reintroduce technologies selectively with specific usage rules
+
+  // ### Creating Technology Rules
+  // Develop personal policies for technology use:
+  // - No devices during the first and last hour of the day
+  // - Social media only after important work is complete
+  // - Email processed in 2-3 designated blocks each day
+  // - One day per week with minimal technology use
+
+  // ### Replacing Digital with Analog
+  // Find satisfying alternatives to digital consumption:
+  // - Physical books instead of endless internet articles
+  // - In-person conversations instead of social media browsing
+  // - Creative hobbies that produce tangible results
+  // - Nature experiences that engage all senses
+
+  // ## Measuring Success
+
+  // Digital minimalism success isn't measured by screen time alone:
+  // - Increased ability to concentrate for extended periods
+  // - Greater satisfaction with how time is spent
+  // - Reduced anxiety about missing online activity
+  // - More meaningful relationships and experiences
+
+  // By approaching technology with greater intentionality, we can harness its benefits while avoiding its pitfalls. Digital minimalism isn't about perfection—it's about creating a digital life that aligns with your deepest values and aspirations.`,
+  //     category: 'Others',
+  //     publishDate: '2025-03-15',
+  //     relatedProducts: [
+  //       {
+  //         title: 'Paper Planner and Journal Set',
+  //         image: '/paper-planner.jpg',
+  //         link: 'https://www.amazon.in/dp/B0987654321',
+  //         price: '₹1,199',
+  //       },
+  //       {
+  //         title: 'Digital Wellness Timer',
+  //         image: '/focus-timer.jpg',
+  //         link: 'https://www.amazon.in/dp/B0123987654',
+  //         price: '₹899',
+  //       },
+  //     ],
+  //   },
+  //   {
+  //     id: 11,
+  //     title:
+  //       'Fermentation Fundamentals: Preserving Food Through Ancient Techniques',
+  //     slug: 'fermentation-fundamentals',
+  //     image: '/fermentation.jpg',
+  //     excerpt:
+  //       'Discover how to preserve food while enhancing flavor and nutrition using traditional fermentation methods from around the world.',
+  //     content: `Fermentation is one of humanity's oldest food preservation methods, dating back thousands of years. Beyond simply extending shelf life, fermentation transforms ordinary ingredients into foods with complex flavors, enhanced nutrition, and probiotic benefits. This ancient practice is experiencing a modern revival as people seek connections to traditional food ways and greater control over their food supply.
+
+  // ## The Science Behind Fermentation
+
+  // At its core, fermentation is controlled decomposition:
+  // - Beneficial microorganisms convert sugars into acids, gases, or alcohol
+  // - The resulting environment prevents harmful bacteria from growing
+  // - Enzymatic processes break down complex compounds into more digestible forms
+  // - Flavor compounds develop through microbial metabolism
+
+  // ## Primary Types of Fermentation
+
+  // ### Lactic Acid Fermentation
+  // The most common home fermentation method:
+  // - Lactobacillus bacteria convert sugars to lactic acid
+  // - Creates tangy, acidic foods like sauerkraut and pickles
+  // - Typically occurs in anaerobic (oxygen-free) environments
+  // - Often requires only salt and vegetables to begin
+
+  // ### Alcoholic Fermentation
+  // Yeast-driven fermentation that produces ethanol:
+  // - Used for beverages like beer, wine, and mead
+  // - Also used in bread making for leavening
+  // - Often requires careful control of sugar content and environment
+  // - Produces carbon dioxide as a byproduct
+
+  // ### Acetic Acid Fermentation
+  // Transforms alcohol into vinegar:
+  // - Acetobacter bacteria convert ethanol to acetic acid
+  // - Requires oxygen (aerobic environment)
+  // - Creates versatile culinary ingredients like vinegar
+  // - Often follows alcoholic fermentation
+
+  // ## Essential Equipment for Home Fermentation
+
+  // Most fermentation requires minimal specialized equipment:
+  // - Glass or ceramic vessels (avoid reactive metals)
+  // - Weights to keep food submerged (for vegetable fermentation)
+  // - Airlocks or other oxygen control methods
+  // - Thermometers for temperature-sensitive fermentations
+  // - pH strips for monitoring acidity levels
+
+  // ## Starter Fermentation Projects
+
+  // ### Vegetable Fermentation
+  // Perfect for beginners:
+  // - Sauerkraut: Just cabbage and salt
+  // - Kimchi: Korean fermented vegetables with spices
+  // - Pickles: Cucumbers transformed by lactic acid bacteria
+  // - Cortido: Latin American fermented cabbage slaw
+
+  // ### Dairy Fermentation
+  // Transform milk into a variety of products:
+  // - Yogurt: Thickened, acidified milk
+  // - Kefir: Effervescent, probiotic milk drink
+  // - Cheese: From simple fresh cheese to complex aged varieties
+  // - Cultured butter: With enhanced flavor complexity
+
+  // ### Grain Fermentation
+  // Adding digestibility and flavor to grains:
+  // - Sourdough bread: Using wild yeast cultures
+  // - Injera: Ethiopian fermented flatbread
+  // - Idli and dosa: South Indian fermented rice and lentil preparations
+  // - Kvass: Eastern European fermented bread drink
+
+  // ## Controlling Fermentation Variables
+
+  // Successful fermentation depends on managing key factors:
+
+  // ### Salt Concentration
+  // - Functions as a selective growth inhibitor
+  // - Typically 2-5% by weight for vegetables
+  // - Creates environment favoring desired microorganisms
+  // - Affects final texture and flavor development
+
+  // ### Temperature
+  // - Higher temperatures accelerate fermentation (generally 65-75°F ideal)
+  // - Lower temperatures slow process but may improve flavor
+  // - Extreme temperatures can inhibit desired microbes or favor undesired ones
+  // - Consistency often more important than specific temperature
+
+  // ### Time
+  // - Longer fermentations develop stronger flavors
+  // - Short fermentations maintain more fresh character
+  // - Timing depends on desired outcome and environmental conditions
+  // - Taste testing is essential for determining doneness
+
+  // ## Safety Considerations
+
+  // Fermentation is remarkably safe when properly done:
+  // - Acidification prevents pathogen growth
+  // - Visual inspection can identify problematic ferments
+  // - Proper sanitation reduces contamination risk
+  // - Trust your senses—off odors or colors indicate problems
+
+  // ## Beyond Basics: Advanced Techniques
+
+  // ### Mixed Culture Fermentation
+  // - Using multiple microbial species for complex results
+  // - Examples include kombucha, kefir, and sourdough
+  // - Requires maintenance of microbial balance
+  // - Often uses a starter culture or SCOBY
+
+  // ### Wild Fermentation
+  // - Relying on naturally occurring microorganisms
+  // - Connects to local microbial terroir
+  // - More variable but potentially unique results
+  // - Examples include wild sourdough and natural wine
+
+  // Fermentation connects us to food traditions practiced across generations and cultures. By mastering these techniques, you not only create delicious, nutritious foods but also participate in a living cultural heritage that spans the globe and reaches back to the very beginnings of human culinary history.`,
+  //     category: 'Others',
+  //     publishDate: '2025-04-05',
+  //     relatedProducts: [
+  //       {
+  //         title: 'Fermentation Crock with Weights',
+  //         image: '/fermentation-crock.jpg',
+  //         link: 'https://www.amazon.in/dp/B0192837465',
+  //         price: '₹3,499',
+  //       },
+  //       {
+  //         title: 'Complete Home Fermentation Kit',
+  //         image: '/fermentation-kit.jpg',
+  //         link: 'https://www.amazon.in/dp/B0918273645',
+  //         price: '₹2,799',
+  //       },
+  //     ],
+  //   },
   {
     id: 12,
     title: 'Natural Skincare: Ancient Remedies for Modern Beauty Routines',

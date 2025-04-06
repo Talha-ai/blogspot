@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// app/blogs/[slug]/page.tsx
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Metadata, ResolvingMetadata } from 'next';

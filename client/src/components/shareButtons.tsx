@@ -18,7 +18,7 @@ export default function ShareButtons({
   className?: string;
 }) {
   const fullUrl = `${
-    process.env.NEXT_PUBLIC_SITE_URL || 'https://blogspot-alpha.vercel.app.com'
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://blogspot-alpha.vercel.app'
   }${url}`;
 
   const handleShare = (platform: string) => {
