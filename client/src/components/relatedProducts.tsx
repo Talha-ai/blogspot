@@ -11,14 +11,14 @@ type Product = {
 
 export default function RelatedProducts({ products }: { products: Product[] }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
       {products.map((product, index) => (
         <Link
           href={product.link}
           key={index}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
+          className="flex items-center bg-[#f4f4f4] p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow"
         >
           <div className="relative w-20 h-20 flex-shrink-0">
             <Image

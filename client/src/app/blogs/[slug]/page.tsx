@@ -1,8 +1,12 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 // app/blogs/[slug]/page.tsx
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { Metadata, ResolvingMetadata } from 'next';
+import { MDXRemote } from 'next-mdx-remote/rsc';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 import { blogData } from '../../data/blogData';
 import RelatedProducts from '@/src/components/relatedProducts';
@@ -79,6 +83,41 @@ function extractHeadings(content: string) {
   return headings;
 }
 
+// Define custom MDX components
+const components = {
+  h1: (props: any) => (
+    <h1 className="text-3xl font-bold mt-10 mb-4" {...props} />
+  ),
+  h2: (props: any) => (
+    <h2 className="text-2xl font-bold mt-8 mb-4" {...props} />
+  ),
+  h3: (props: any) => (
+    <h3 className="text-xl font-semibold mt-6 mb-3" {...props} />
+  ),
+  p: (props: any) => <p className="mb-4" {...props} />,
+  ul: (props: any) => <ul className="mb-6 ml-6 list-disc" {...props} />,
+  ol: (props: any) => <ol className="mb-6 ml-6 list-decimal" {...props} />,
+  li: (props: any) => <li className="mb-1" {...props} />,
+  strong: (props: any) => <strong className="font-semibold" {...props} />,
+  blockquote: (props: any) => (
+    <blockquote
+      className="pl-4 border-l-4 border-gray-300 italic my-4"
+      {...props}
+    />
+  ),
+  code: (props: any) => (
+    <code
+      className="bg-gray-100 px-1 py-0.5 rounded text-sm font-mono"
+      {...props}
+    />
+  ),
+  pre: (props: any) => (
+    <pre className="bg-gray-100 p-4 rounded-lg overflow-auto my-4 font-mono text-sm">
+      {props.children}
+    </pre>
+  ),
+};
+
 export default function BlogPost({ params }: { params: { slug: string } }) {
   const post = blogData.find((post) => post.slug === params.slug);
 
@@ -89,35 +128,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
   const headings = extractHeadings(post.content);
 
-  // Process markdown content
-  // Note: In a real implementation, you'd use a markdown library like remark/rehype
-  // This is a simplified version for the example
-  const processedContent = post.content
-    .replace(/^##\s+(.+)$/gm, (_, title) => {
-      const slug = title
-        .toLowerCase()
-        .replace(/[^\w\s]/g, '')
-        .replace(/\s+/g, '-');
-      return `<h2 id="${slug}" class="text-2xl font-bold mt-8 mb-4">${title}</h2>`;
-    })
-    .replace(
-      /^###\s+(.+)$/gm,
-      '<h3 class="text-xl font-semibold mt-6 mb-3">$1</h3>'
-    )
-    .replace(/\*\*(.+?)\*\*/g, '<strong class="font-semibold">$1</strong>')
-    .replace(/\n\n/g, '</p><p class="mb-4">')
-    .replace(
-      /^\d\.\s+\*\*(.+?)\*\*:\s+(.+)$/gm,
-      '<div class="mb-4"><span class="font-bold">$1</span>: $2</div>'
-    )
-    .replace(/^- (.+)$/gm, '<li class="ml-6 mb-1 list-disc">$1</li>')
-    .split(/(?=<li)/)
-    .join('')
-    .split(/(?<=<\/li>)/)
-    .join('');
-
   return (
-    <article className="max-w-4xl mx-auto px-4 py-10">
+    <article className="max-w-4xl mx-auto px-10 py-10 bg-[#e8e8e894] my-10 rounded-3xl">
       {/* Structured data for SEO */}
       <script
         type="application/ld+json"
@@ -174,11 +186,21 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
         <TableOfContents headings={headings} className="mb-8" />
       )}
 
-      {/* Post content */}
-      <div
-        className="prose prose-lg max-w-none mb-12"
-        dangerouslySetInnerHTML={{ __html: `<p>${processedContent}</p>` }}
-      />
+      {/* Post content using MDX */}
+      <div className="prose prose-lg max-w-none mb-12">
+        <MDXRemote
+          source={post.content}
+          components={components}
+          options={{
+            mdxOptions: {
+              rehypePlugins: [
+                rehypeSlug,
+                [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+              ],
+            },
+          }}
+        />
+      </div>
 
       {/* Related products section */}
       {post.relatedProducts && post.relatedProducts.length > 0 && (
