@@ -995,7 +995,7 @@ Fermentation connects us to food traditions practiced across generations and cul
     id: 12,
     title: 'Natural Skincare: Ancient Remedies for Modern Beauty Routines',
     slug: 'natural-skincare-ancient-remedies',
-    image: '/natural.png',
+    image: '/Natural.png',
     excerpt:
       'Explore how traditional, natural ingredients can transform your skincare routine with time-tested remedies that are gentle, effective, and affordable.',
     content: `Natural skincare has been practiced across cultures for thousands of years, long before commercial products lined store shelves. These time-tested remedies often use simple, accessible ingredients that work in harmony with the body's natural processes. Today, as more people seek alternatives to synthetic formulations, these ancient practices are experiencing a revival in modern beauty routines.
@@ -1140,7 +1140,7 @@ Fermentation connects us to food traditions practiced across generations and cul
       },
       {
         title: 'Gleva Silicone Skincare Lip/Nose Exfoliator',
-        image: '/exfoliator.png',
+        image: '/Exfoliator.png',
         link: 'https://amzn.to/43BkdUl',
         price: '₹49',
       },
