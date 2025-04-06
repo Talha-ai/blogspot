@@ -15,19 +15,19 @@ export default function Navbar() {
   // Check authentication status on component mount
   useEffect(() => {
     const checkAuthStatus = async () => {
-      try {
-        const response = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_BASE_URL}/auth/getUser`,
-          {
-            withCredentials: true,
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          }
-        );
-        setIsLoggedIn(response.data.isAuthenticated);
-      } catch (error) {
+      const token = localStorage.getItem('token');
+
+      if (!token) {
         setIsLoggedIn(false);
+        return;
+      }
+
+      try {
+        const response = await axios.get('/verify-token');
+        setIsLoggedIn(true);
+      } catch {
+        setIsLoggedIn(false);
+        localStorage.removeItem('token');
       }
     };
 
@@ -72,7 +72,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 w-full h-[75px] flex justify-between items-center bg-[#2196f3] text-white z-50">
-      <div className="flex justify-center items-center">
+      <div className="w-full lg:w-fit flex justify-between lg:justify-center items-center">
         <Link href="/">
           <h2 className="text-[2em] font-semibold ml-4 md:ml-8">BlogSpot</h2>
         </Link>
@@ -122,9 +122,10 @@ export default function Navbar() {
           </div>
         </nav>
       </div>
+
       {isLoggedIn ? (
         <button
-          className="text-lg font-semibold px-4 py-1 border-2 border-white rounded-md bg-white text-[#2196f3] hover:bg-transparent hover:text-white transition-colors duration-300 mr-12 ml-5"
+          className="hidden lg:block text-lg font-semibold px-4 py-1 border-2 border-white rounded-md bg-white text-[#2196f3] hover:bg-transparent hover:text-white transition-colors duration-300 mr-12 ml-5"
           onClick={handleLogout}
         >
           Logout
@@ -132,13 +133,13 @@ export default function Navbar() {
       ) : (
         <>
           <button
-            className="text-lg font-semibold px-4 py-1 border-2 border-white rounded-md bg-transparent text-white hover:bg-white hover:text-[#2196f3] transition-colors duration-300 ml-auto"
+            className="hidden lg:block text-lg font-semibold px-4 py-1 border-2 border-white rounded-md bg-transparent text-white hover:bg-white hover:text-[#2196f3] transition-colors duration-300 ml-auto"
             onClick={() => openModal('login')}
           >
             Login
           </button>
           <button
-            className="text-lg font-semibold px-4 py-1 border-2 border-white rounded-md bg-white text-[#2196f3] hover:bg-transparent hover:text-white transition-colors duration-300 mr-12 ml-5"
+            className="hidden lg:block text-lg font-semibold px-4 py-1 border-2 border-white rounded-md bg-white text-[#2196f3] hover:bg-transparent hover:text-white transition-colors duration-300 mr-12 ml-5"
             onClick={() => openModal('signup')}
           >
             Signup
