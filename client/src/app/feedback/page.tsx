@@ -86,7 +86,7 @@ export default function FeedbackPage() {
           We Value Your Feedback
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Your thoughts and suggestions help us improve BlogSpot. Please take a
+          Your thoughts and suggestions help us improve BlogInn. Please take a
           moment to share your experience and let us know how we can make it
           even better.
         </p>
@@ -236,10 +236,10 @@ export default function FeedbackPage() {
               Send your feedback directly to our dedicated team.
             </p>
             <a
-              href="mailto:feedback@blogspot.com"
+              href="mailto:feedback@bloginn.com"
               className="text-[#2196f3] hover:underline"
             >
-              feedback@blogspot.com
+              feedback@bloginn.com
             </a>
           </div>
 
@@ -252,7 +252,7 @@ export default function FeedbackPage() {
               Share your thoughts with us on Twitter.
             </p>
             <a href="#" className="text-[#2196f3] hover:underline">
-              @BlogSpot
+              @BlogInn
             </a>
           </div>
 
@@ -282,7 +282,7 @@ export default function FeedbackPage() {
             </h3>
             <p className="text-gray-600">
               All feedback is reviewed by our team and considered for future
-              updates and improvements to BlogSpot.
+              updates and improvements to BlogInn.
             </p>
           </div>
           <div>

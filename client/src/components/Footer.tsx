@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1 - About */}
           <div>
-            <h3 className="text-xl font-bold mb-4">BlogSpot</h3>
+            <h3 className="text-xl font-bold mb-4">BlogInn</h3>
             <p className="text-gray-400 mb-4">
               Your go-to destination for insightful articles on cooking, health,
               technology and more.
@@ -182,7 +182,7 @@ const Footer = () => {
         {/* Bottom footer */}
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2025 BlogSpot. All rights reserved.
+            © 2025 BlogInn. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
             <Link

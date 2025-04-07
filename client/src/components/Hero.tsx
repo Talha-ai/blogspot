@@ -14,7 +14,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center z-10 relative">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-          Welcome to BlogSpot
+          Welcome to BlogInn
         </h1>
         <p className="text-xl md:text-2xl max-w-2xl mb-8">
           Your source for insightful articles, stories, and updates on topics

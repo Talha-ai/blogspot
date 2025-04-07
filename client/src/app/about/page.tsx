@@ -14,7 +14,7 @@ export default function AboutPage() {
         <h1
           className={`${leckerliOne.className} text-4xl md:text-5xl text-[#2196f3] mb-4`}
         >
-          About Blogspot
+          About BlogInn
         </h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
           Your go-to destination for thought-provoking content across a variety
@@ -28,7 +28,7 @@ export default function AboutPage() {
             Our Mission
           </h2>
           <p className="text-gray-600 mb-4">
-            At Blogspot, we believe in the power of words to transform
+            At BlogInn, we believe in the power of words to transform
             perspectives and connect communities. Our mission is to curate and
             showcase high-quality blog content that educates, entertains, and
             inspires readers from all walks of life.
@@ -41,7 +41,7 @@ export default function AboutPage() {
           </p>
           <p className="text-gray-600">
             Whether you&apos;re a casual reader looking for your next favorite
-            blog or a passionate writer seeking to share your voice, Blogspot is
+            blog or a passionate writer seeking to share your voice, BlogInn is
             your home for authentic, engaging content.
           </p>
         </div>
@@ -115,7 +115,7 @@ export default function AboutPage() {
             Our Story
           </h2>
           <p className="text-gray-600 mb-4">
-            Blogspot was founded in 2023 by a group of content enthusiasts who
+            BlogInn was founded in 2023 by a group of content enthusiasts who
             recognized the need for a centralized platform that celebrates
             quality blog content. What started as a small project has grown into
             a thriving community of readers and writers.
@@ -138,7 +138,7 @@ export default function AboutPage() {
             Join Our Community
           </h2>
           <p className="text-gray-600 mb-6">
-            Become part of the Blogspot family and engage with content that
+            Become part of the BlogInn family and engage with content that
             matters to you. Here&apos;s how you can participate:
           </p>
 

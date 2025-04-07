@@ -210,7 +210,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-gray-700 font-medium">Email</h3>
-                  <p className="text-gray-600">info@blogspot.com</p>
+                  <p className="text-gray-600">info@bloginn.com</p>
                 </div>
               </div>
 

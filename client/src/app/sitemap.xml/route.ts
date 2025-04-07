@@ -1,7 +1,7 @@
 import { blogData } from '../data/blogData';
 
 export async function GET() {
-  const baseUrl = 'https://blogspot-alpha.vercel.app';
+  const baseUrl = 'https://www.bloginn.space';
 
   // Get all blog URLs
   const blogUrls = blogData.map((blog) => `${baseUrl}/blog/${blog.slug}`);
