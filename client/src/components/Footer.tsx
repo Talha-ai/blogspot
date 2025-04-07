@@ -116,15 +116,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/blogs/category/food"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Food
+                  Cooking
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/blogs/category/health"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Health
@@ -132,7 +132,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/blogs/category/technology"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Technology
@@ -140,15 +140,15 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/blogs/category/lifestyle"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Lifestyle
+                  Sports
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/blogs/category/travel"
+                  href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Travel
@@ -186,19 +186,19 @@ const Footer = () => {
           </p>
           <div className="flex space-x-6 text-sm">
             <Link
-              href="/privacy-policy"
+              href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
-              href="/terms-of-service"
+              href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
               Terms of Service
             </Link>
             <Link
-              href="/cookie-policy"
+              href="#"
               className="text-gray-400 hover:text-white transition-colors"
             >
               Cookie Policy
