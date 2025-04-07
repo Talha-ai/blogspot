@@ -22,12 +22,12 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-2">
           <Link href="/blogs">
-            <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-md hover:bg-blue-50 transition-colors">
+            <button className="px-8 py-3 cursor-pointer bg-white text-blue-600 font-semibold rounded-md hover:bg-blue-50 transition-colors">
               Explore Blogs
             </button>
           </Link>
           <Link href="/contact">
-            <button className="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-blue-600 transition-colors">
+            <button className="px-8 py-3 cursor-pointer bg-transparent border-2 border-white text-white font-semibold rounded-md hover:bg-white hover:text-blue-600 transition-colors">
               Contact Us
             </button>
           </Link>
