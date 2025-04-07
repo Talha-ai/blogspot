@@ -27,7 +27,7 @@ const BlogList = () => {
           {categories.map((category) => (
             <button
               key={category}
-              className={`px-4 py-2 rounded-full transition-colors ${
+              className={`px-4 py-2 cursor-pointer rounded-full transition-colors ${
                 filter === category
                   ? 'bg-[#2196f3] text-white'
                   : 'bg-white text-gray-700 hover:bg-gray-100'
