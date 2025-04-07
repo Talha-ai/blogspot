@@ -60,7 +60,7 @@ Homemade ghee can be kept at room temperature for several weeks or refrigerated 
         title: 'GirOrganic A2 Pure Ghee',
         image: '/ghee.jpg',
         link: 'https://amzn.to/4claST1',
-        price: '1351',
+        price: '₹1,351',
       },
     ],
   },
