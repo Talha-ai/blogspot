@@ -47,7 +47,7 @@ export async function generateMetadata(
       publishedTime: post.publishDate,
       images: [
         {
-          url: post.image,
+          url: `${process.env.NEXT_PUBLIC_SITE_URL}/${post.image}`,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -129,95 +129,93 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
   const headings = extractHeadings(post.content);
 
   return (
-   
-      <article className="max-w-4xl mx-auto px-10 py-10 bg-[#e8e8e894] my-10 rounded-3xl">
-        {/* Structured data for SEO */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'BlogPosting',
-              headline: post.title,
-              image: post.image,
-              datePublished: post.publishDate,
-              description: post.excerpt,
-              // author: {
-              //   '@type': 'Organization',
-              //   name: 'Your Blog Name',
-              // },
-            }),
+    <article className="max-w-4xl mx-auto px-10 py-10 bg-[#e8e8e894] my-10 rounded-3xl">
+      {/* Structured data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: post.title,
+            image: post.image,
+            datePublished: post.publishDate,
+            description: post.excerpt,
+            // author: {
+            //   '@type': 'Organization',
+            //   name: 'Your Blog Name',
+            // },
+          }),
+        }}
+      />
+
+      {/* Category badge */}
+      <div className="mb-4">
+        <span className="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
+          {post.category}
+        </span>
+      </div>
+
+      {/* Post header */}
+      <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+      <p className="text-gray-600 mb-8">
+        Published on {formatDate(post.publishDate)}
+      </p>
+
+      {/* Featured image */}
+      <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden">
+        <Image
+          src={post.image}
+          alt={post.title}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
+          className="object-cover"
+        />
+      </div>
+
+      {/* Share buttons */}
+      <ShareButtons
+        title={post.title}
+        url={`/blogs/${post.slug}`}
+        className="mb-8"
+      />
+
+      {/* Table of contents for longer posts */}
+      {headings.length > 3 && (
+        <TableOfContents headings={headings} className="mb-8" />
+      )}
+
+      {/* Post content using MDX */}
+      <div className="prose prose-lg max-w-none mb-12">
+        <MDXRemote
+          source={post.content}
+          components={components}
+          options={{
+            mdxOptions: {
+              rehypePlugins: [
+                rehypeSlug,
+                [rehypeAutolinkHeadings, { behavior: 'wrap' }],
+              ],
+            },
           }}
         />
+      </div>
 
-        {/* Category badge */}
-        <div className="mb-4">
-          <span className="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">
-            {post.category}
-          </span>
-        </div>
+      {/* Related products section */}
+      {post.relatedProducts && post.relatedProducts.length > 0 && (
+        <section className="border-t border-gray-200 pt-8 mt-12">
+          <h2 className="text-2xl font-bold mb-6">Related Products</h2>
+          <RelatedProducts products={post.relatedProducts} />
+        </section>
+      )}
 
-        {/* Post header */}
-        <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-        <p className="text-gray-600 mb-8">
-          Published on {formatDate(post.publishDate)}
-        </p>
-
-        {/* Featured image */}
-        <div className="relative w-full h-[400px] mb-8 rounded-lg overflow-hidden">
-          <Image
-            src={post.image}
-            alt={post.title}
-            fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            priority
-            className="object-cover"
-          />
-        </div>
-
-        {/* Share buttons */}
-        <ShareButtons
-          title={post.title}
-          url={`/blogs/${post.slug}`}
-          className="mb-8"
-        />
-
-        {/* Table of contents for longer posts */}
-        {headings.length > 3 && (
-          <TableOfContents headings={headings} className="mb-8" />
-        )}
-
-        {/* Post content using MDX */}
-        <div className="prose prose-lg max-w-none mb-12">
-          <MDXRemote
-            source={post.content}
-            components={components}
-            options={{
-              mdxOptions: {
-                rehypePlugins: [
-                  rehypeSlug,
-                  [rehypeAutolinkHeadings, { behavior: 'wrap' }],
-                ],
-              },
-            }}
-          />
-        </div>
-
-        {/* Related products section */}
-        {post.relatedProducts && post.relatedProducts.length > 0 && (
-          <section className="border-t border-gray-200 pt-8 mt-12">
-            <h2 className="text-2xl font-bold mb-6">Related Products</h2>
-            <RelatedProducts products={post.relatedProducts} />
-          </section>
-        )}
-
-        {/* Navigation to other posts */}
-        <nav className="flex justify-between items-center border-t border-gray-200 pt-8 mt-12">
-          <PrevNextButton direction="prev" currentPostId={post.id} />
-          <PrevNextButton direction="next" currentPostId={post.id} />
-        </nav>
-      </article>
-
+      {/* Navigation to other posts */}
+      <nav className="flex justify-between items-center border-t border-gray-200 pt-8 mt-12">
+        <PrevNextButton direction="prev" currentPostId={post.id} />
+        <PrevNextButton direction="next" currentPostId={post.id} />
+      </nav>
+    </article>
   );
 }
 
