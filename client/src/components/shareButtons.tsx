@@ -7,7 +7,7 @@ import {
   Link as LinkIcon,
   Mail,
 } from 'lucide-react';
-
+import { FaWhatsapp } from 'react-icons/fa';
 export default function ShareButtons({
   title,
   url,
@@ -45,6 +45,11 @@ export default function ShareButtons({
           title
         )}&body=${encodeURIComponent(fullUrl)}`;
         break;
+      case 'whatsapp':
+        shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(
+          title + ' ' + fullUrl
+        )}`;
+        break;
       default:
         return;
     }
@@ -54,42 +59,49 @@ export default function ShareButtons({
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(fullUrl);
-    // You could add toast notification here
+    // Optionally show toast here
   };
 
   return (
     <div className={`flex gap-3 ${className}`}>
       <button
         onClick={() => handleShare('facebook')}
-        className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+        className="p-2 rounded-full cursor-pointer bg-gray-100 hover:bg-gray-200 transition-colors"
         aria-label="Share on Facebook"
       >
         <Facebook size={18} />
       </button>
       <button
         onClick={() => handleShare('twitter')}
-        className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+        className="p-2 rounded-full cursor-pointer bg-gray-100 hover:bg-gray-200 transition-colors"
         aria-label="Share on Twitter"
       >
         <Twitter size={18} />
       </button>
       <button
         onClick={() => handleShare('linkedin')}
-        className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+        className="p-2 rounded-full cursor-pointer bg-gray-100 hover:bg-gray-200 transition-colors"
         aria-label="Share on LinkedIn"
       >
         <Linkedin size={18} />
       </button>
       <button
+        onClick={() => handleShare('whatsapp')}
+        className="p-2 rounded-full cursor-pointer bg-gray-100 hover:bg-gray-200 transition-colors"
+        aria-label="Share on WhatsApp"
+      >
+        <FaWhatsapp size={18} />
+      </button>
+      <button
         onClick={() => handleShare('email')}
-        className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+        className="p-2 rounded-full cursor-pointer bg-gray-100 hover:bg-gray-200 transition-colors"
         aria-label="Share via Email"
       >
         <Mail size={18} />
       </button>
       <button
         onClick={copyToClipboard}
-        className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+        className="p-2 rounded-full cursor-pointer bg-gray-100 hover:bg-gray-200 transition-colors"
         aria-label="Copy link"
       >
         <LinkIcon size={18} />
