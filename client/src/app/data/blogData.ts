@@ -510,7 +510,7 @@ The next decade of AI will bring both tremendous opportunities and significant c
     id: 8,
     title: 'Cricket Technique Revolution: Modern Batting Approaches',
     slug: 'cricket-technique-revolution',
-    image: '/cricket.png',
+    image: '/cricket.jpg',
     excerpt:
       'Explore how T20 cricket has transformed batting techniques across all formats of the game, and what amateur players can learn from these innovations.',
     content: `Cricket batting technique has undergone a remarkable transformation over the past decade. The traditional orthodoxy that dominated for generations has been challenged and, in many cases, replaced by innovative approaches born from T20 cricket. This evolution hasn't just changed the shortest format—it's revolutionized batting across all forms of the game, from Test matches to domestic competitions.
