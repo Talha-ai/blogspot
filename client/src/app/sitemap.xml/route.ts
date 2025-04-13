@@ -4,7 +4,7 @@ export async function GET() {
   const baseUrl = 'https://www.bloginn.space';
 
   // Get all blog URLs
-  const blogUrls = blogData.map((blog) => `${baseUrl}/blog/${blog.slug}`);
+  const blogUrls = blogData.map((blog) => `${baseUrl}/blogs/${blog.slug}`);
 
   // Add main pages
   const urls = [
