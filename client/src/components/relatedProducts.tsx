@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 type Product = {
   title: string;
-  image: string;
+  image?: string;
   link: string;
-  price: string;
+  price?: string;
 };
 
 export default function RelatedProducts({ products }: { products: Product[] }) {
@@ -22,7 +22,7 @@ export default function RelatedProducts({ products }: { products: Product[] }) {
         >
           <div className="relative w-20 h-20 flex-shrink-0">
             <Image
-              src={product.image}
+              src={product.image || '/fallback-image.png'}
               alt={product.title}
               fill
               sizes="80px"
