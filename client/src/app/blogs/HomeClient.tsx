@@ -11,8 +11,8 @@ export default function HomeClient() {
 
   const filteredBlogs =
     filter === 'All'
-      ? blogData.slice(0, 4)
-      : blogData.filter((blog) => blog.category === filter).slice(0, 4);
+      ? blogData
+      : blogData.filter((blog) => blog.category === filter);
 
   return (
     <main>

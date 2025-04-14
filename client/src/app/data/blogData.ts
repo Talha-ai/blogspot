@@ -10,9 +10,9 @@ export interface BlogPost {
   featured?: boolean;
   relatedProducts?: {
     title: string;
-    image: string;
+    image?: string;
     link: string;
-    price: string;
+    // price: string;
   }[];
 }
 
@@ -59,8 +59,8 @@ Homemade ghee can be kept at room temperature for several weeks or refrigerated 
       {
         title: 'GirOrganic A2 Pure Ghee',
         image: '/ghee.jpg',
-        link: 'https://amzn.to/4claST1',
-        price: '₹1,351',
+        link: 'https://www.amazon.in/GirOrganic-organic-bilona-preparation-grassfed/dp/B07VPZN1WX?dib=eyJ2IjoiMSJ9.mdB7foXrQ3iwS9grMvo6aWuCL8FTHWYpEdZAHW7AFHQEWh-3scribSAR0gTW3nenaJ-29QRGiU9DDva-gqOsXVZJMW6blPquSLjR0za1JCG7tNQ-Ez4dvxIORLAKvAlxQmQPTYQh6pIAoPwUlB1tdteL-6kXWOfjo1dCPAgFH_a7s2uHv4ZiWxm3immjBkWQJkvfPJWxecGgmn5Vn00u6amICD-5AhLivyqoun8HU-NSoEe6y91tHo4cQUhkAoYwqx0z16WfS9Nur9I0JhhjvxmTNVYB8x6r01FDPCRkJU0.apieaUP95oYEPdqA_uYfNer_N23M-fLv1xChRKZszLc&dib_tag=se&keywords=GirOrganic%2BA2%2BPure%2BGhee&qid=1744623751&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=2ad5ee9ed78e289a2b0ac04d5811d24d&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹1,351',
       },
     ],
   },
@@ -119,17 +119,17 @@ Homemade ghee can be kept at room temperature for several weeks or refrigerated 
     relatedProducts: [
       {
         title: "Beginner's Cookware Set - 8 Piece",
-        image: '/cookset.png',
-        link: 'https://amzn.to/4j18BPp',
-        price: '₹2,859',
+        // image: '/cookset.png',
+        link: 'https://www.amazon.in/AmazonBasics-Non-Stick-Induction-Temperature-Resistant/dp/B0B8DC1QQV?dib=eyJ2IjoiMSJ9.hNhPauTMIZvxlpHaTf4Kl9EhatFCDr58VBToy9LALNl9mMeTKciliVr4wucsrERpREK9qLBTrz1UYHhSqRzl517gHa6J6RAM2NNs1m1JAJSLrTOWR5s2XN3mcwtEggG2rVGj4wZzdQLAwgp3xin4LfA-JkcMZB-xOYrcnE0Ke2hBhKmObg9aQ-jo7ZAvclwYnmIM2W7AXPu4Wu0n7Fqeq0BRobIP3kuTYWc7HaKGtWrkECrHdcUmJaEvFKefcvyK0f1gto-KQiqe7yDDQsjK_qHaneF7xgA0pBd3EvIW9eU.xsggA-JWL4KzYGDDWCMONjJd7tjkwSBvLwWS7VwmFrw&dib_tag=se&keywords=Beginner%27s%2BCookware%2BSet%2B-%2B8%2BPiece&qid=1744623783&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=7b371a609a9e0b2d08bf58a6d2ed67c4&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹2,859',
       },
-      {
-        title:
-          "Julia's Kitchen Wisdom: Essential Techniques and Recipes from a Lifetime of Cooking",
-        image: '/cookbook.png',
-        link: 'https://amzn.to/420E4Lp',
-        price: '₹971',
-      },
+      // {
+      //   title:
+      //     "Julia's Kitchen Wisdom: Essential Techniques and Recipes from a Lifetime of Cooking",
+      //   // image: '/cookbook.png',
+      //   link: 'https://amzn.to/420E4Lp',
+      //   // price: '₹971',
+      // },
     ],
   },
 
@@ -202,15 +202,15 @@ Remember, healthy eating doesn't have to be complex or time-consuming. The key i
     relatedProducts: [
       {
         title: 'Glass Meal Prep Containers - Set of 5',
-        image: '/meal-prep.png',
-        link: 'https://amzn.to/4clyWoz',
-        price: '₹2,249',
+        // image: '/meal-prep.png',
+        link: 'https://www.amazon.in/Allo-Containers-Microwave-Borosilicate-185ml/dp/B0CG5P7SF6?dib=eyJ2IjoiMSJ9.AhvIGG3ujlZ9-4TTlBlH75zol8GzGUH6_8jsAmEI2TZ5GBH-i-MutvYXgDVyjt0lXB3zxY56ErwmS0iXopXSLjyNUs5X3Pgn6nYepgwZmiLI85Lx7_TCo1b3Zq2WhNf3NtI1CZu3zTPms3xR6eP5peW79iNX4PtR0Y8_ST6YY4fqN57tRYZ8T3D-IcSnFJDpr2p1QtEK7NlFaRj-8O03om_v19d6Vmy0guCC6QulLeqL0nAjwmUaRRka4SWgXvTQQ5062YzTU3B3vkY-nyVustp7qvtKym4MpCYrkDCG1HU.gHmd0q2iF3ZoMEMtAig3mjBlGipOfrYkmheD3onmjag&dib_tag=se&keywords=Glass%2BMeal%2BPrep%2BContainers%2B-%2BSet%2Bof%2B5&qid=1744623826&sr=8-5&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=8a0c8d768e3b104de32b04d21e1b58b3&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹2,249',
       },
       {
         title: 'Digital Food Scale with Nutritional Calculator',
-        image: '/food-scale.png',
-        link: 'https://amzn.to/3FSEriH',
-        price: '₹799',
+        // image: '/food-scale.png',
+        link: 'https://www.amazon.in/HealthSense-Chef-Mate-KS-63-Weighing/dp/B093ZZVMVW?crid=245DJ2UWYBYZV&dib=eyJ2IjoiMSJ9.Mkrs1itJ_SmyzYfYhVF2oCVEb1JfGEchnTkWtdyzdUfKERYcOq1sAT36MG-b0O-sfmY5R7QBAqpG_g7Cc9Vh4hrew3HP4u_-ENGuNZ7gpnMr-aVHxxOt36Cba9VCekz_XMKaiLMdYasFIDr9gwZqrheZR_Z3V7TErix_xjqdQnHqII61xppiGYtcUOuZWx4TUNReR6IVdfqu84GGWgO-n3Zo6wrRJQNzLts6sRDZGh4.sYozIgFsJQBXYebj6CXO3clMjVdnBQ9D9yMGTo4gf1U&dib_tag=se&keywords=Digital%2BFood%2BScale%2Bwith%2BNutritional%2BCalculator&qid=1744623860&sprefix=glass%2Bmeal%2Bprep%2Bcontainers%2B-%2Bset%2Bof%2B5%2Caps%2C481&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=c1d630daf825e43f270f70e1aa15e510&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹799',
       },
     ],
   },
@@ -278,17 +278,17 @@ By focusing on sleep quality rather than quantity, many people find they can act
     publishDate: '2025-03-25',
     featured: true,
     relatedProducts: [
-      {
-        title: 'Smart Sleep Tracker with Daily Analytics',
-        image: '/sleep-tracker.png',
-        link: 'https://amzn.to/42hihxV',
-        price: '₹13,110',
-      },
+      // {
+      //   title: 'Smart Sleep Tracker with Daily Analytics',
+      //   // image: '/sleep-tracker.png',
+      //   link: 'https://amzn.to/42hihxV',
+      //   // price: '₹13,110',
+      // },
       {
         title: 'Weighted Blanket for Better Sleep',
-        image: '/weighted-blanket.png',
-        link: 'https://amzn.to/4j0yPBw',
-        price: '₹4,999',
+        // image: '/weighted-blanket.png',
+        link: 'https://www.amazon.in/Mysa-Sleep-Weighted-Blanket-Breathable/dp/B09SZBJ3FZ?dib=eyJ2IjoiMSJ9.pKEWKQyMWRwD0j96ae_b8lteciFW9R4oCsriE8iXkxhXaSAGUoNCeFX4IJ2Ni0NhCfoFrKmTR6WwQpLOOtp02tbbyzGgXZ7FNIAEMBv4HWfqz8uhtw-v732vT7_ikmSX9YWemIwoRoIlV8p4N5X2dP3TNrOtwiBsWtNJItXuikrQaf0Hf7NTVhquhWkWhqTswCIGit0ksOQa53i9DG4xaDb6jf6CJu2Oon17JW5E7zw1lF2j-ynJnsV00yxHxdyGlE0KbZbgB5W2WPxOSmZtTS82YXRIfSU9Vsoawgt2VT4.Yar0wZMsuDeLWPnokp5r_uZ7BcWPHlupjC0l9CdaLdM&dib_tag=se&keywords=Weighted%2BBlanket%2Bfor%2BBetter%2BSleep&qid=1744623905&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=9370d01b4faa50073c3329413b805c07&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹4,999',
       },
     ],
   },
@@ -371,10 +371,10 @@ The next decade of AI will bring both tremendous opportunities and significant c
     featured: true,
     relatedProducts: [
       {
-        title: 'AI Business Applications: Strategy and Implementation',
-        image: '/ai-book.png',
-        link: 'https://amzn.to/3XJgikD',
-        price: '1,664',
+        title: 'AI Leadership Handbook',
+        // image: '/ai-book.png',
+        link: 'https://www.amazon.in/AI-Leadership-Handbook-Practical-Technology/dp/1962280500?crid=169YTFN1O5354&dib=eyJ2IjoiMSJ9.kNAcSid3Sa1dTPOzOD5W9G_py4CVall6R7cbFtacwnosObV5CdzBOAgwLwwSmysiWH6Svf2DPWBVgX4PvkO_-1T-d-pY_MiWcABdLFG90JwDKyCElzwcZjF9eJmDrIdpaiTYLOHeF8KoZzh-wfsazHvFy9xnbuepqC5t76e3ExZXenLbtG7bnRCdKxyJRTawpuVdH7VLOgTIQq_phbikR4smNByMY1mRsaRxhx3KKUg.fhSR4LkZUbh_qFN3UmRkxbQZZXR_bJ3GAePPcO2_0tY&dib_tag=se&keywords=AI+Business+Applications%3A+Strategy+and+Implementation&qid=1744623936&sprefix=weighted+blanket+for+better+sleep%2Caps%2C505&sr=8-2&linkCode=ll1&tag=mavenbz0a2-21&linkId=7d8d57a946f732678e6c8eaaeeb5267d&language=en_IN&ref_=as_li_ss_tl',
+        // price: '1,664',
       },
       // {
       //   title: 'Advanced Machine Learning Certification Course',
@@ -601,9 +601,9 @@ Cricket batting continues to evolve, with each generation building on and challe
     relatedProducts: [
       {
         title: 'Professional Cricket Batting Gloves',
-        image: '/cricket-gloves.png',
-        link: 'https://amzn.to/4cEDZRv',
-        price: '₹2,899',
+        // image: '/cricket-gloves.png',
+        link: 'https://www.amazon.in/SLUGGER-Cricket-Professional-Batting-Gloves/dp/B0CY9D932Q?crid=19KOPOAYV9LB9&dib=eyJ2IjoiMSJ9.pKCScBEkpOXEwjg4ev8oGc1lGQ37u_aoPdRgW91qCKoAC6wjiFAYZf9oBqz22gVcHmma2f__DOFWdtsk_2oxsY9gy79Oc3vySOCMRKL_7LGRoYpC9XwmphHXEo7riZJ_VwF-dT0wSg7IRtNXVHddaghZfO3Ww24fxoiCzW1h0RfmbGWlUG5qSi9m1ZCsSt9YsX9tqs01eOKWiygStR-uLrbrw85g17USOKEQuTe4wnfISBnHc38dItVYqqI_HcMH9_rhmDUbLaPKYq7OiXYZOWtxuf20xlUXyPgWLDprI6Y.vEI4n2V-h23nrThvr9AqAS7iUBtP9m7UxoMQixK9Yk8&dib_tag=se&keywords=Professional%2BCricket%2BBatting%2BGlove&qid=1744623970&sprefix=ai%2Bbusiness%2Bapplications%2Bstrategy%2Band%2Bimplementation%2Caps%2C375&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=d12e321045c4e0b39acf78243bac5a86&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹2,899',
       },
       // {
       //   title: 'English Willow Cricket Bat',
@@ -1123,21 +1123,135 @@ Cricket batting continues to evolve, with each generation building on and challe
     relatedProducts: [
       {
         title: "Pure Multani Mitti (Fuller's Earth)",
-        image: '/multani.png',
-        link: 'https://amzn.to/4lBf2uj',
-        price: '₹89',
+        // image: '/multani.png',
+        link: 'https://www.amazon.in/DynaLeaf-Multani-Powder-Glowing-Removal/dp/B0DNMMVMQH?crid=HCE0GEBSB3HK&dib=eyJ2IjoiMSJ9.hGdq9tMEuTvTJvb0V6XezuZpQbVd_KOUG-3Uts2j6TK1LGAostAPbZGlYY6CLr2HP0wYpxpoz51ECihp8B_wzivk_jlhwk6byOueGpyUDua4KfhDTeAgJHel81E9S9WgzEQajGAUvrji6G7Ir9OR0rN-IhqkDzQoSsXjwHutZo7oKZ53sQPDO8G4fVvzorLsrtr3BEiEIkMrftB30hxZeG3D-9t8_8vlhuV-ngdCrWI4m0dKPWJforMJ-BE9zNogYSc-hED5zEv1BGuxeyQhSu23CpuxT64qJl2b3B3x9WU.DmxzeF7f4xxy5xrkP9KiRytbLVtD5tFCFivUCvqdzwk&dib_tag=se&keywords=skincare&qid=1743930809&sprefix=skinca%2Caps%2C310&sr=8-1&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=5db8b7cc64e57955c91ac95550a58439&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹89',
       },
       {
         title: 'Scalp Massager',
-        image: '/scalp.png',
-        link: 'https://amzn.to/3EaD6De',
-        price: '₹39',
+        // image: '/scalp.png',
+        link: 'https://www.amazon.in/JustLatest-Massager-Marble-Scrubber-Shampoo/dp/B0D3Z2BSPB?crid=2SLUYV6PHV1UX&dib=eyJ2IjoiMSJ9.p0VGOl90brspvQ-tzghARf9nw3CZObPwIovm2WCyMvEb7QvDtqM66JbPhjptoz1doLPce_l8b_u223jP1ytUEJELGtOHthgc7oumITRKKP5bgxLCEoCPzY_Db8JSIpLhmJVFZqedP5B698MlVndl1KmhyZm0eY1v6vbxlvYUkUmQxPAkTJ6i1PT90ajb7xXx_vN0d3Zy4L3g1GjEP2C72a_44gf0qOMG7ErVXbL83yVpor93WcrOQFB3-vOr6IpNbuBbcDKeGfTo3wYNKCTBaTVCTRDepqrxsqzjbxaOn64.zGBBivoVunEpEOm4YllbHkqqwN6aRBaY4jPyrEaAWLA&dib_tag=se&keywords=cheap+products+under+50rs&qid=1743892320&sprefix=cheap+products+under+50r%2Caps%2C252&sr=8-35&linkCode=ll1&tag=mavenbz0a2-21&linkId=cd6c9b6f5180115be09e436dd16be03d&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹39',
       },
       {
         title: 'Dove Cream Beauty Bathing Bar',
-        image: '/dove.png',
-        link: 'https://amzn.to/4lginP0',
-        price: '₹25',
+        // image: '/dove.png',
+        link: 'https://www.amazon.in/Dove-Cream-Beauty-Bathing-Soap/dp/B00VK5U9J6?crid=2G616VVJP4E1P&dib=eyJ2IjoiMSJ9.RXNnVTDSg5t1U968KCRDbfzU_KY9QrM_vA51ICjuOwC1s1X6UGi_P0SHLceuG79sXvEVvohHnOaknTGiOOrpTXexYGkscORM5vQYyHmjZobfx7n5IT362jiXlt11Y1VW-axzUKQZXjWCHDTrlfFrZVs6hWkJdYj3ZzG4tYB7H2_OrYjqWB5GEuTr0cU8qq7rbIfp4Ryl74XvBwpc40exZ1BZj0Xe2b1jbKS4V-T3Rf6v1vMNMHdtBnr8cIDmtPHpFJWlKICLlWjhCrjyfmCsoFaIRyMSXf2scfR1-cES6iw.XXnRigM3PgAJI4ZdNvXhHAC2Q4t8AP9KLU8h1rCwUhI&dib_tag=se&keywords=cheap+health+care+products&qid=1744262743&sprefix=cheaphealth+care+products%2Caps%2C531&sr=8-7&linkCode=ll1&tag=mavenbz0a2-21&linkId=8b8407666f9d738445c4eaf355cb1622&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹25',
+      },
+    ],
+  },
+
+  {
+    id: 13,
+    title:
+      'Thoughtful Gift Ideas: Personalized and Meaningful Presents for Every Occasion',
+    slug: 'thoughtful-gift-ideas',
+    image: '/gifts.png',
+    excerpt:
+      'Discover unique and heartfelt gift ideas that show you care — from personalized keepsakes to experience-based presents that create lasting memories.',
+    content: `Giving the perfect gift is about more than just checking a box — it's about showing someone you understand and appreciate them. Thoughtful gifts speak to shared experiences, personal interests, and the little things that make someone feel seen. Whether it’s for a birthday, anniversary, holiday, or just because, meaningful presents create joy that lingers far beyond the moment of unwrapping.
+  
+  ## Why Thoughtful Gifts Matter
+  
+  Gift-giving is a love language:
+  - It reflects your emotional investment in a relationship
+  - Thoughtful choices show that you’ve paid attention
+  - Creates deeper personal connections and happy memories
+  
+  ## Personalized Gift Ideas
+  
+  ### Custom Keepsakes
+  Timeless and sentimental options:
+  - Name-engraved jewelry or accessories
+  - Custom photo books capturing shared memories
+  - Personalized star maps from special dates
+  - Monogrammed leather goods or stationery
+  
+  ### DIY and Handmade Gifts
+  A labor of love:
+  - Handwritten letters or a "52 Reasons I Love You" jar
+  - Hand-knit scarves or home-baked cookies
+  - Framed hand-drawn art or digital portraits
+  - Customized playlists with meaningful song choices
+  
+  ## Experience-Based Gifts
+  
+  ### Activities and Getaways
+  For the adventure-loving soul:
+  - Spa day or wellness retreat voucher
+  - Concert or theater tickets to their favorite artist
+  - Weekend getaway to a scenic destination
+  - Adventure experiences like hot-air balloon rides or pottery classes
+  
+  ### Subscriptions and Memberships
+  Gifts that keep on giving:
+  - Monthly book or gourmet snack boxes
+  - Personalized meal kit delivery subscriptions
+  - Masterclass or Skillshare membership
+  - Digital magazine or mindfulness app access
+  
+  ## Gifts Based on Interests
+  
+  ### For Book Lovers
+  - First-edition or signed copy of a favorite book
+  - Personalized bookmarks or reading lamps
+  - Book-themed candle sets or mugs
+  
+  ### For Tech Enthusiasts
+  - Smart trackers for keys, wallets, or health
+  - Personalized phone case or pop sockets
+  - Desk gadgets or ergonomic accessories
+  
+  ### For Wellness Seekers
+  - Aromatherapy diffusers with essential oils
+  - Yoga mats with affirmations
+  - Journals for gratitude or goal setting
+  
+  ## Gifts for Special Relationships
+  
+  ### For Partners
+  - Memory jar with notes from shared moments
+  - Customized jewelry with coordinates of your first date
+  - Matching couple robes or personalized puzzles
+  
+  ### For Parents
+  - Hand-painted family portraits
+  - Recipe books filled with family favorites
+  - Custom calendar with family photos and special dates
+  
+  ### For Friends
+  - Inside joke mugs or matching accessories
+  - Experience kits (movie night, coffee tasting, etc.)
+  - Memory scrapbook or “Open When” letters
+  
+  ## Sustainable Gifting Practices
+  
+  ### Eco-Friendly Gift Wrapping
+  - Use kraft paper or reusable fabric wraps
+  - Decorate with dried flowers or twine
+  - Avoid plastic bows and tape where possible
+  
+  ### Conscious Product Selection
+  - Shop from small businesses and artisans
+  - Choose biodegradable, upcycled, or organic products
+  - Give experiences or digital gifts that reduce waste
+  
+  Gift-giving is an opportunity to express love, gratitude, and connection. By choosing thoughtful, personalized presents, you not only bring joy to someone’s day but also strengthen the bonds that matter most. It's the thought, intention, and love behind the gift that truly counts.`,
+    category: 'Lifestyle',
+    publishDate: '2025-04-05',
+    relatedProducts: [
+      // {
+      //   title: 'Personalized Name Necklace',
+      //   link: 'https://amzn.to/4example1',
+      // },
+      {
+        title: 'Foldable Gift Box',
+        link: 'https://www.amazon.in/Foldable-Packaging-Box-Reusable-Multipurpose/dp/B0CRYZWBR2?pd_rd_w=B56G6&content-id=amzn1.sym.fa0aca50-60f7-47ca-a90e-c40e2f4b46a9%3Aamzn1.symc.ca948091-a64d-450e-86d7-c161ca33337b&pf_rd_p=fa0aca50-60f7-47ca-a90e-c40e2f4b46a9&pf_rd_r=64SSE58RHK3HAWZ0741N&pd_rd_wg=Bddfb&pd_rd_r=5c93f407-b27d-41f5-af37-2eb35aa80a8e&pd_rd_i=B0CRYZWBR2&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=2327bc7b9592d07ac63c5f7965c50d5b&language=en_IN&ref_=as_li_ss_tl',
+      },
+      {
+        title: 'Scented Candle Gift Set',
+        link: 'https://www.amazon.in/Scented-Sandalwood-Aromatherapy-Friendly-Container/dp/B09F68YWC5?dib=eyJ2IjoiMSJ9.t1BPMsK1wFn8BL_4NW7WVZWWmSPsZk0_Va7VVPX5iLNoKQaQBpDHeMztSi-Bosq1ce1rKXwkzFzs7wYEEmzVTOm_X68cJjgePejcm1cUZqpuBLsgzbGh-beM6X_skJIuZ435P5DI6o_t4WCxKVKYBKgohw2qgdSxbiz21BkRw9Oh4gcKqRhp9F7VR_3ZTU36wgG5RW31yueCNcJEGe9ELghlHHjQlKZVxKrPSwpvhovsyv_JjlThLKwUbr0yHL7Ts40spdprTfa2ugh13dmcVX_peXVyxkkQpz_mFJcErVs.z37pqY0wqVSc-p394MLa0UZbAGmuY8nVpIP1RHcgPUI&dib_tag=se&keywords=Scented+Candle+Gift+Set&qid=1744623478&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=f8f6811731db1434889375a63fcb763e&language=en_IN&ref_=as_li_ss_tl',
       },
     ],
   },
