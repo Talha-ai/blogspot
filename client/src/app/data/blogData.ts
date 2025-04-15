@@ -1136,7 +1136,7 @@ Cricket batting continues to evolve, with each generation building on and challe
       {
         title: 'Dove Cream Beauty Bathing Bar',
         // image: '/dove.png',
-        link: 'https://www.amazon.in/Dove-Cream-Beauty-Bathing-Soap/dp/B00VK5U9J6?crid=2G616VVJP4E1P&dib=eyJ2IjoiMSJ9.RXNnVTDSg5t1U968KCRDbfzU_KY9QrM_vA51ICjuOwC1s1X6UGi_P0SHLceuG79sXvEVvohHnOaknTGiOOrpTXexYGkscORM5vQYyHmjZobfx7n5IT362jiXlt11Y1VW-axzUKQZXjWCHDTrlfFrZVs6hWkJdYj3ZzG4tYB7H2_OrYjqWB5GEuTr0cU8qq7rbIfp4Ryl74XvBwpc40exZ1BZj0Xe2b1jbKS4V-T3Rf6v1vMNMHdtBnr8cIDmtPHpFJWlKICLlWjhCrjyfmCsoFaIRyMSXf2scfR1-cES6iw.XXnRigM3PgAJI4ZdNvXhHAC2Q4t8AP9KLU8h1rCwUhI&dib_tag=se&keywords=cheap+health+care+products&qid=1744262743&sprefix=cheaphealth+care+products%2Caps%2C531&sr=8-7&linkCode=ll1&tag=mavenbz0a2-21&linkId=8b8407666f9d738445c4eaf355cb1622&language=en_IN&ref_=as_li_ss_tl',
+        link: 'https://www.amazon.in/dp/B008KH5FBE?tag=mavenbz0a2-21',
         // price: '₹25',
       },
     ],
