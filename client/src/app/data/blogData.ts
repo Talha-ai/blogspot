@@ -1134,9 +1134,9 @@ Cricket batting continues to evolve, with each generation building on and challe
         // price: '₹39',
       },
       {
-        title: 'Dove Cream Beauty Bathing Bar',
+        title: 'Pears Bathing Soap',
         // image: '/dove.png',
-        link: 'https://www.amazon.in/dp/B008KH5FBE?tag=mavenbz0a2-21',
+        link: 'https://www.amazon.in/dp/B01E58FOYE?tag=mavenbz0a2-21',
         // price: '₹25',
       },
     ],
