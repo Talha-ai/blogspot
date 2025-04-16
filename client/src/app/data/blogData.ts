@@ -1134,6 +1134,12 @@ Cricket batting continues to evolve, with each generation building on and challe
         // price: '₹39',
       },
       {
+        title: 'Parachute Coconut Oil',
+        // image: '/scalp.png',
+        link: 'https://www.amazon.in/Parachute-Coconut-Oil-100ml-Bottle/dp/B00A8VQ5D2?crid=2BRJTF3VQEZI1&dib=eyJ2IjoiMSJ9.dI5X0oRwPoRUCr5SPD5XL8z2V7XH9Oi-K7zldkopypE22z_2HAG2yHYfTw9DEM-716abuTHmNyVJCpLZxuOqQjQqeu3dItwd6SkdPgITfMtrXUkHSC3P_RBdBhGUDhepKaQLrCaHSeNBvvETsbh_DRU-g3Cx4z_J-TNmdzav1zF1RWSPJHRFL9YvlfMAQ8C32fvhPKWkvxpHM4OD8hmolc2NciDKiz99uHWu78e3xBqK3o5noBUltC07Qvm9pWMC_9UNZm_RKJP5jcmuzELKS9OJTzymYFLWRuEhintIqwM.Pe6DmfvsA3D4CrvFyVTHY5x89-RLebs_BohMwzH_DY0&dib_tag=se&keywords=parachute&qid=1744817543&sbo=m6DjfpMzMLDmL8pSMKX8hw%3D%3D&sprefix=parach%2Caps%2C407&sr=8-2&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=ecfa2c67bc07880a9418ddd941a12f4a&language=en_IN&ref_=as_li_ss_tl',
+        // price: '₹39',
+      },
+      {
         title: 'Pears Bathing Soap',
         // image: '/dove.png',
         link: 'https://www.amazon.in/dp/B01E58FOYE?tag=mavenbz0a2-21',
