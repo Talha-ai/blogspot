@@ -376,6 +376,12 @@ The next decade of AI will bring both tremendous opportunities and significant c
         link: 'https://www.amazon.in/AI-Leadership-Handbook-Practical-Technology/dp/1962280500?crid=169YTFN1O5354&dib=eyJ2IjoiMSJ9.kNAcSid3Sa1dTPOzOD5W9G_py4CVall6R7cbFtacwnosObV5CdzBOAgwLwwSmysiWH6Svf2DPWBVgX4PvkO_-1T-d-pY_MiWcABdLFG90JwDKyCElzwcZjF9eJmDrIdpaiTYLOHeF8KoZzh-wfsazHvFy9xnbuepqC5t76e3ExZXenLbtG7bnRCdKxyJRTawpuVdH7VLOgTIQq_phbikR4smNByMY1mRsaRxhx3KKUg.fhSR4LkZUbh_qFN3UmRkxbQZZXR_bJ3GAePPcO2_0tY&dib_tag=se&keywords=AI+Business+Applications%3A+Strategy+and+Implementation&qid=1744623936&sprefix=weighted+blanket+for+better+sleep%2Caps%2C505&sr=8-2&linkCode=ll1&tag=mavenbz0a2-21&linkId=7d8d57a946f732678e6c8eaaeeb5267d&language=en_IN&ref_=as_li_ss_tl',
         // price: '1,664',
       },
+      {
+        title: 'Dynamo Surge 20000mAh Power Bank',
+        // image: '/ai-book.png',
+        link: 'https://www.amazon.in/dp/B0CZ4D7PZN?social_share=cm_sw_r_cso_wa_apan_dp_SCSDGXQN3631HB5H1T8J&previewDoh=1&th=1&linkCode=ll1&tag=mavenbz0a2-21&linkId=d492aab5fb70e4db836a3f1ea0440ca3&language=en_IN&ref_=as_li_ss_tl',
+        // price: '1,664',
+      },
       // {
       //   title: 'Advanced Machine Learning Certification Course',
       //   image: '/ml-course.jpg',
